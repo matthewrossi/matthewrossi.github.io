@@ -1,7 +1,7 @@
 .PHONY   : all clean html serve test
 
 SOURCE   = resume.json
-HTML     = index.html
+HTML     = html/index.html
 
 all: html
 
