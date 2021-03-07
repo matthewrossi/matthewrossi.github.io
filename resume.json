@@ -1,0 +1,239 @@
+{
+  "basics": {
+    "icon": "resources/favicon.ico",
+    "name": "Matthew Rossi",
+    "label": "PhD Student - Università degli Studi di Bergamo",
+    "picture": "resources/me.jpg",
+    "email": "7518140101025b071a06061c351218141c195b161a18",
+    "phone": "",
+    "website": "https://matthewrossi.github.io/",
+    "summary": "I am a passionate developer who loves working on projects that matter.     I work as a PhD student at Università degli Studi di Bergamo where, with the Security Lab team, I conduct reasearch on mobile systems security, as well as policy management and privacy in data market scenarios. I love to solve problems and engage with projects that require me to learn new things.",
+    "location": {},
+    "profiles": [
+      {
+        "network": "Github",
+        "username": "matthewrossi",
+        "url": "https://github.com/matthewrossi"
+      },
+      {
+        "network": "LinkedIn",
+        "username": "mattlectic",
+        "url": "https://linkedin.com/in/mattlectic"
+      }
+    ]
+  },
+  "work": [
+    {
+      "company": "Università degli Studi di Bergamo",
+      "position": "Researcher",
+      "website": "https://seclab.unibg.it/",
+      "startDate": "2019",
+      "summary": "UniBG Security Lab is the Computer Security group at Università degli Studi di Bergamo. Research interests include cloud, mobile and systems security, with particular focus on policies and access control.",
+      "highlights": [
+        "Extended the implementation of SELinux in Android to support 3rd party app's specific policies",
+        "Developed a sanitization algorithm to achieve k-anonymity on large datasets with Apache Spark",
+        "Implemented a policy engine evaluating access requests based on an ODRL-like policy language",
+        "Developed a SQL front end for the policy engine to extract the targets needed to perform the given query",
+        "Implemented an encrypted virtual filesystem based on Mix&Slice",
+        "Supervised 10+ thesis students"
+      ]
+    },
+    {
+      "company": "Università degli Studi di Bergamo",
+      "position": "Teaching Assistant",
+      "website": "https://www.unibg.it/",
+      "startDate": "2019",
+      "summary": "Teaching assistant for the bachelor course \"Informatica (modulo di programmazione)\"",
+      "highlights": [
+        "Lectures on the introduction to computer programming in Python",
+        "Taught in Italian"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Università degli Studi di Bergamo",
+      "area": "Software Engineering",
+      "studyType": "Ph.D. program in Engineering and Applied Sciences",
+      "startDate": "2020",
+      "subject": "Mobile systems security & Privacy",
+      "supervisor": "Prof. Stefano Paraboschi"
+    },
+    {
+      "institution": "Politecnico di Milano",
+      "area": "Software Engineering",
+      "studyType": "Master of Science (MSc)",
+      "startDate": "2015",
+      "endDate": "2018",
+      "thesis": "Mandatory Access Control for Third-Party Apps",
+      "gpa": "3.85/4.0"
+    },
+    {
+      "institution": "Università degli Studi di Bergamo",
+      "area": "Software Engineering",
+      "studyType": "Bachelor of Science (BSc)",
+      "startDate": "2012",
+      "endDate": "2015",
+      "thesis": "Access control and confidentiality using over-encryption in Openstack",
+      "gpa": "4.0/4.0 - Graduated summa cum laude"
+    },
+    {
+      "institution": "ITIS P. Paleocapa",
+      "area": "Technical High School",
+      "studyType": "High School",
+      "startDate": "2007",
+      "endDate": "2012"
+    }
+  ],
+  "publications": [
+    {
+      "name": "SEApp: Bringing Mandatory Access Control to Android Apps",
+      "publisher": "USENIX Security '21",
+      "releaseDate": "(Available soon)",
+      "website": ""
+    },
+    {
+      "name": "Scalable Distributed Data Anonymization",
+      "publisher": "PerCom '21",
+      "releaseDate": "(Available soon)",
+      "website": ""
+    },
+    {
+      "name": "Artifact: Scalable Distributed Data Anonymization",
+      "publisher": "PerCom '21",
+      "releaseDate": "(Available soon)",
+      "website": ""
+    }
+  ],
+  "projects": [
+    {
+      "name": "SEApp: Bringing Mandatory Access Control to Android Apps",
+      "website": "https://github.com/matthewrossi/seapp",
+      "summary": "Design and implemention of a SELinux solution to extend the Android's SELinux implementation to support 3rd party app's defined policy. The repository provides a set of changes to the Android Open Source Project."
+    },
+    {
+      "name": "Anonymization in Apache Spark",
+      "website": "https://github.com/mosaicrown/mondrian",
+      "summary": "A Dockerized Apache Spark-based version of Mondrian, a sanitization algorithm to achieve k-anonimity. This version of Mondrian is meant to perform sanitization over large datasets, and it is executed on an Apache Spark cluster with a varying number of executors."
+    },
+    {
+      "name": "ODRL-like Policy Engine",
+      "website": "https://github.com/mosaicrown/policy-engine",
+      "summary": "A policy engine evaluating access requests based on an ODRL-like policy language. It includes a SQL front end to extract the targets needed to perform a given query and therefore automate the target identification on relational databases access requests."
+    },
+    {
+      "name": "FreyaFS - a Mix&Slice virtual filesystem",
+      "website": "https://github.com/mosaicrown/freya-fs",
+      "summary": "An encrypted virtual filesystem implemented on top of Filesystem in Userspace (FUSE) that persists data using the Mix&Slice all-or-nothing transform."
+    },
+    {
+      "name": "Music Recommender",
+      "website": "https://github.com/matthewrossi/music-recommender",
+      "summary": "A recommender system to suggest songs a user would likely add to one of her playlists based on: other tracks in the same playlist, other playlists created by the same user and other playlists created by other users."
+    },
+    {
+      "name": "Il Dottore Artificiale",
+      "website": "https://github.com/matthewrossi/dottore-artificiale",
+      "summary": "A simplified implementation of a rule-based expert system in the medical field, with the goal to filter diseases a patient may be suffering based on the symptoms she presents. A chatbot interacts with the patient by generating questions and parsing their answers with regular expressions."
+    },
+    {
+      "name": "Command Prompt Snake",
+      "website": "https://github.com/matthewrossi/command-prompt-snake",
+      "summary": "An implementation of Snake for the Windows Command Prompt."
+    }
+  ],
+  "challenges": [
+    {
+      "name": "Coding Challenges",
+      "website": "https://github.com/matthewrossi/coding-challenges",
+      "summary": "I am passionate about code challenges since high school, when I took part at Olimpiadi Italiane di Informatica, a national event on problem solving with focus on algorithm time and space complexity. More recently I have participated to Google's Code Jam, Hash Code and Kick Start, and Reply Code Challenge."
+    }
+  ],
+  "skills": [
+    {
+      "name": "Programming",
+      "level": "",
+      "keywords": [
+        "Python",
+        "Java",
+        "C/C++"
+      ]
+    },
+    {
+      "name": "Linux",
+      "level": "",
+      "keywords": [
+        "Ubuntu",
+        "Regolith Linux"
+      ]
+    },
+    {
+      "name": "Security & Privacy",
+      "level": "",
+      "keywords": [
+        "SELinux",
+        "k-anonymity",
+        "Differential Privacy"
+      ]
+    },
+    {
+      "name": "Engineering",
+      "level": "",
+      "keywords": [
+        "Version Control",
+        "Databases"
+      ]
+    },
+    {
+      "name": "Distributed Systems",
+      "level": "",
+      "keywords": [
+        "Apache Spark",
+        "Java Message Service",
+        "JAX-RS"
+      ]
+    },
+    {
+      "name": "DevOps",
+      "level": "",
+      "keywords": [
+        "Docker",
+        "Docker Compose"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "Italian",
+      "fluency": "Native speaker"
+    },
+    {
+      "language": "English",
+      "fluency": "Fluent"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Technology"
+    },
+    {
+      "name": "Soccer"
+    },
+    {
+      "name": "Videogames"
+    },
+    {
+      "name": "Travel",
+      "keywords": [
+        "Backpacking",
+        "Flights"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "name": "",
+      "reference": "available upon request"
+    }
+  ]
+}
