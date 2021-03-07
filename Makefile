@@ -1,7 +1,7 @@
 .PHONY   : all clean html serve test
 
 SOURCE   = resume.json
-HTML     = html/index.html
+HTML     = index.html
 
 all: html
 
@@ -12,7 +12,7 @@ html: $(SOURCE) theme/node_modules
 	resume export --theme ./theme $(HTML)
 
 serve: $(HTML)
-	cd html; python serve.py
+	python serve.py
 
 test: $(SOURCE)
 	resume test --theme ./theme $@
