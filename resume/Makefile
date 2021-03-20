@@ -12,7 +12,7 @@ html: $(SOURCE) theme/node_modules
 	resume export --theme ./theme $(HTML)
 
 serve: $(HTML)
-	python serve.py
+	cd html; ../serve.py
 
 test: $(SOURCE)
 	resume test --theme ./theme $@
