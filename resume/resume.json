@@ -95,14 +95,14 @@
     {
       "name": "Scalable Distributed Data Anonymization",
       "publisher": "PerCom '21",
-      "releaseDate": "(Available soon)",
-      "website": ""
+      "releaseDate": "2021-03",
+      "website": "https://cs.unibg.it/seclab-papers/2021/PerCom/mondrian.pdf"
     },
     {
       "name": "Artifact: Scalable Distributed Data Anonymization",
       "publisher": "PerCom '21",
-      "releaseDate": "(Available soon)",
-      "website": ""
+      "releaseDate": "2021-03",
+      "website": "https://cs.unibg.it/seclab-papers/2021/PerCom/mondrian-artifact.pdf"
     }
   ],
   "projects": [
