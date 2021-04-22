@@ -89,8 +89,8 @@
     {
       "name": "SEApp: Bringing Mandatory Access Control to Android Apps",
       "publisher": "USENIX Security '21",
-      "releaseDate": "(Available soon)",
-      "website": ""
+      "releaseDate": "2021-04",
+      "website": "https://cs.unibg.it/seclab-papers/2021/USENIX/seapp.pdf"
     },
     {
       "name": "Scalable Distributed Data Anonymization",
