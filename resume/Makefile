@@ -15,7 +15,7 @@ serve: $(HTML)
 	cd html; ../serve.py
 
 test: $(SOURCE)
-	resume test --theme ./theme $@
+	resume validate --theme ./theme $@
 
 clean:
 	@ rm -rf theme/node_modules theme/package-lock.json
