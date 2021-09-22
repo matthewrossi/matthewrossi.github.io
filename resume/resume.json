@@ -7,7 +7,7 @@
     "email": "7518140101025b071a06061c351218141c195b161a18",
     "phone": "",
     "website": "https://matthewrossi.github.io/",
-    "summary": "I am a passionate developer who loves working on projects that matter.     I work as a PhD student at Università degli Studi di Bergamo where, with the Security Lab team, I conduct reasearch on mobile systems security, as well as policy management and privacy in data market scenarios. I love to solve problems and engage with projects that require me to learn new things.",
+    "summary": "I am a passionate developer who loves working on projects that matter. I work as a PhD student at Università degli Studi di Bergamo and my research focuses on computer security, mostly investigating the integration of security features in mobile systems, policy management and privacy of outsourced data. I love to solve problems and engage with projects that require me to learn new things.",
     "location": {},
     "profiles": [
       {
@@ -32,10 +32,10 @@
       "highlights": [
         "Extended the implementation of SELinux in Android to support 3rd party app's specific policies",
         "Developed a sanitization algorithm to achieve k-anonymity on large datasets with Apache Spark",
-        "Implemented a policy engine evaluating access requests based on an ODRL-like policy language",
-        "Developed a SQL front end for the policy engine to extract the targets needed to perform the given query",
-        "Implemented an encrypted virtual filesystem based on Mix&Slice",
-        "Supervised 10+ thesis students"
+        "Developed a secure indexing tool enabling query execution over encrypted datasets",
+        "Developed an encrypted virtual filesystem based on Mix&Slice",
+        "Developed a policy engine evaluating access requests based on an ODRL-like policy language",
+        "Supervised 15+ thesis students"
       ]
     },
     {
@@ -43,10 +43,11 @@
       "position": "Teaching Assistant",
       "website": "https://www.unibg.it/",
       "startDate": "2019",
-      "summary": "Teaching assistant for the bachelor course \"Informatica (modulo di programmazione)\"",
+      "summary": "Teaching assistant for the bachelor's courses: \"Informatica (modulo di programmazione)\" and \"Basi di dati e Web\", and the master's course: \"Sicurezza dei sistemi informatici\". Lectures of these courses are about:",
       "highlights": [
-        "Lectures on the introduction to computer programming in Python",
-        "Taught in Italian"
+        "Programming in Python",
+        "Database technologies & Web development",
+        "Access control & Sanboxing"
       ]
     }
   ],
@@ -87,9 +88,20 @@
   ],
   "publications": [
     {
+      "name": "Multi-dimensional indexes for point and range queries on outsourced encrypted data",
+      "publisher": "GLOBECOM '21",
+      "releaseDate": "(available soon)"
+    },
+    {
+      "name": "I Told You Tomorrow: Practical Time-Locked Secrets using Smart Contracts",
+      "publisher": "ARES '21",
+      "releaseDate": "2021-08",
+      "website": "https://cs.unibg.it/seclab-papers/2021/ARES/ityt.pdf"
+    },
+    {
       "name": "SEApp: Bringing Mandatory Access Control to Android Apps",
       "publisher": "USENIX Security '21",
-      "releaseDate": "2021-04",
+      "releaseDate": "2021-08",
       "website": "https://cs.unibg.it/seclab-papers/2021/USENIX/seapp.pdf"
     },
     {
@@ -102,7 +114,8 @@
       "name": "Artifact: Scalable Distributed Data Anonymization",
       "publisher": "PerCom '21",
       "releaseDate": "2021-03",
-      "website": "https://cs.unibg.it/seclab-papers/2021/PerCom/mondrian-artifact.pdf"
+      "website": "https://cs.unibg.it/seclab-papers/2021/PerCom/mondrian-artifact.pdf",
+      "summary": "Best Artifact Award"
     }
   ],
   "projects": [
@@ -117,14 +130,18 @@
       "summary": "A Dockerized Apache Spark-based version of Mondrian, a sanitization algorithm to achieve k-anonimity. This version of Mondrian is meant to perform sanitization over large datasets, and it is executed on an Apache Spark cluster with a varying number of executors."
     },
     {
-      "name": "ODRL-like Policy Engine",
-      "website": "https://github.com/mosaicrown/policy-engine",
-      "summary": "A policy engine evaluating access requests based on an ODRL-like policy language. It includes a SQL front end to extract the targets needed to perform a given query and therefore automate the target identification on relational databases access requests."
+      "name": "k-flat Secure Indexing for encrypted databases",
+      "summary": "A secure indexing tool enabling query execution over encrypted datasets. It preprocesses the dataset to construct client-side mappings and uses them to wrap the dataset accordigly. It shows their runtime use, by automating the upload of the encypted dataset onto PostgresSQL and Redis, and querying them."
     },
     {
       "name": "FreyaFS - a Mix&Slice virtual filesystem",
       "website": "https://github.com/mosaicrown/freya-fs",
       "summary": "An encrypted virtual filesystem implemented on top of Filesystem in Userspace (FUSE) that persists data using the Mix&Slice all-or-nothing transform."
+    },
+    {
+      "name": "ODRL-like Policy Engine",
+      "website": "https://github.com/mosaicrown/policy-engine",
+      "summary": "A policy engine evaluating access requests based on an ODRL-like policy language. It includes a SQL front end to extract the targets needed to perform a given query and therefore automate the target identification on relational databases access requests."
     },
     {
       "name": "Music Recommender",

@@ -370,6 +370,10 @@ icon.large {
     content: "\e615";
 }
 
+.entypo-link:before {
+    content: "\1F517";
+}
+
 	</style>
 
 	<script>
@@ -444,7 +448,7 @@ function decode() {
 			<div id="summary" class="row">
 				<div class="col-sm-8 col-sm-offset-4 col-xs-12">
 					<div class="summary">
-						<p class="lead">I am a passionate developer who loves working on projects that matter.     I work as a PhD student at Università degli Studi di Bergamo where, with the Security Lab team, I conduct reasearch on mobile systems security, as well as policy management and privacy in data market scenarios. I love to solve problems and engage with projects that require me to learn new things.</p>
+						<p class="lead">I am a passionate developer who loves working on projects that matter. I work as a PhD student at Università degli Studi di Bergamo and my research focuses on computer security, mostly investigating the integration of security features in mobile systems, policy management and privacy of outsourced data. I love to solve problems and engage with projects that require me to learn new things.</p>
 					</div>
 				</div>
 			</div>
@@ -484,10 +488,10 @@ function decode() {
 				<ul class="highlights">
 					<li>Extended the implementation of SELinux in Android to support 3rd party app&#x27;s specific policies</li>
 					<li>Developed a sanitization algorithm to achieve k-anonymity on large datasets with Apache Spark</li>
-					<li>Implemented a policy engine evaluating access requests based on an ODRL-like policy language</li>
-					<li>Developed a SQL front end for the policy engine to extract the targets needed to perform the given query</li>
-					<li>Implemented an encrypted virtual filesystem based on Mix&amp;Slice</li>
-					<li>Supervised 10+ thesis students</li>
+					<li>Developed a secure indexing tool enabling query execution over encrypted datasets</li>
+					<li>Developed an encrypted virtual filesystem based on Mix&amp;Slice</li>
+					<li>Developed a policy engine evaluating access requests based on an ODRL-like policy language</li>
+					<li>Supervised 15+ thesis students</li>
 				</ul>
 			</div>
 			<div class="item">
@@ -509,11 +513,12 @@ function decode() {
 					<a href="https://www.unibg.it/">https://www.unibg.it/</a>
 				</div>
 				<div class="summary">
-					<p>Teaching assistant for the bachelor course &quot;Informatica (modulo di programmazione)&quot;</p>
+					<p>Teaching assistant for the bachelor&#x27;s courses: &quot;Informatica (modulo di programmazione)&quot; and &quot;Basi di dati e Web&quot;, and the master&#x27;s course: &quot;Sicurezza dei sistemi informatici&quot;. Lectures of these courses are about:</p>
 				</div>
 				<ul class="highlights">
-					<li>Lectures on the introduction to computer programming in Python</li>
-					<li>Taught in Italian</li>
+					<li>Programming in Python</li>
+					<li>Database technologies &amp; Web development</li>
+					<li>Access control &amp; Sanboxing</li>
 				</ul>
 			</div>
 		</div>
@@ -653,12 +658,9 @@ function decode() {
 				</div>
 			</div>
 			<div class="item">
-				<h3 class="name">ODRL-like Policy Engine</h3>
-				<div class="website">
-					<a href="https://github.com/mosaicrown/policy-engine">https://github.com/mosaicrown/policy-engine</a>
-				</div>
+				<h3 class="name">k-flat Secure Indexing for encrypted databases</h3>
 				<div class="summary">
-					<p>A policy engine evaluating access requests based on an ODRL-like policy language. It includes a SQL front end to extract the targets needed to perform a given query and therefore automate the target identification on relational databases access requests.</p>
+					<p>A secure indexing tool enabling query execution over encrypted datasets. It preprocesses the dataset to construct client-side mappings and uses them to wrap the dataset accordigly. It shows their runtime use, by automating the upload of the encypted dataset onto PostgresSQL and Redis, and querying them.</p>
 				</div>
 			</div>
 			<div class="item">
@@ -668,6 +670,15 @@ function decode() {
 				</div>
 				<div class="summary">
 					<p>An encrypted virtual filesystem implemented on top of Filesystem in Userspace (FUSE) that persists data using the Mix&amp;Slice all-or-nothing transform.</p>
+				</div>
+			</div>
+			<div class="item">
+				<h3 class="name">ODRL-like Policy Engine</h3>
+				<div class="website">
+					<a href="https://github.com/mosaicrown/policy-engine">https://github.com/mosaicrown/policy-engine</a>
+				</div>
+				<div class="summary">
+					<p>A policy engine evaluating access requests based on an ODRL-like policy language. It includes a SQL front end to extract the targets needed to perform a given query and therefore automate the target identification on relational databases access requests.</p>
 				</div>
 			</div>
 			<div class="item">
@@ -738,16 +749,41 @@ function decode() {
 		<div class="col-sm-8">
 			<div class="item">
 				<div class="name">
+					<h3>Multi-dimensional indexes for point and range queries on outsourced encrypted data</h3>
+				</div>
+				<div class="publisher">
+					<p class="lead">GLOBECOM &#x27;21</p>
+				</div>
+				<div class="date">
+					(available soon)
+				</div>
+			</div>
+			<div class="item">
+				<div class="name">
+					<h3>I Told You Tomorrow: Practical Time-Locked Secrets using Smart Contracts</h3>
+				</div>
+				<div class="publisher">
+					<p class="lead">ARES &#x27;21</p>
+				</div>
+				<div class="date">
+					2021-08
+				</div>
+				<div class="website">
+					<a href="https://cs.unibg.it/seclab-papers/2021/ARES/ityt.pdf">https://cs.unibg.it/seclab-papers/2021/ARES/ityt.pdf</icon></a>
+				</div>
+			</div>
+			<div class="item">
+				<div class="name">
 					<h3>SEApp: Bringing Mandatory Access Control to Android Apps</h3>
 				</div>
 				<div class="publisher">
 					<p class="lead">USENIX Security &#x27;21</p>
 				</div>
 				<div class="date">
-					2021-04
+					2021-08
 				</div>
 				<div class="website">
-					<a href="https://cs.unibg.it/seclab-papers/2021/USENIX/seapp.pdf">Link</a>
+					<a href="https://cs.unibg.it/seclab-papers/2021/USENIX/seapp.pdf">https://cs.unibg.it/seclab-papers/2021/USENIX/seapp.pdf</icon></a>
 				</div>
 			</div>
 			<div class="item">
@@ -761,7 +797,7 @@ function decode() {
 					2021-03
 				</div>
 				<div class="website">
-					<a href="https://cs.unibg.it/seclab-papers/2021/PerCom/mondrian.pdf">Link</a>
+					<a href="https://cs.unibg.it/seclab-papers/2021/PerCom/mondrian.pdf">https://cs.unibg.it/seclab-papers/2021/PerCom/mondrian.pdf</icon></a>
 				</div>
 			</div>
 			<div class="item">
@@ -775,7 +811,10 @@ function decode() {
 					2021-03
 				</div>
 				<div class="website">
-					<a href="https://cs.unibg.it/seclab-papers/2021/PerCom/mondrian-artifact.pdf">Link</a>
+					<a href="https://cs.unibg.it/seclab-papers/2021/PerCom/mondrian-artifact.pdf">https://cs.unibg.it/seclab-papers/2021/PerCom/mondrian-artifact.pdf</icon></a>
+				</div>
+				<div class="summary">
+					<p>Best Artifact Award</p>
 				</div>
 			</div>
 		</div>
