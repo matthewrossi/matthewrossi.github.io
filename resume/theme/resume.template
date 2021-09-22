@@ -450,7 +450,7 @@
 				{{/if}}
 				{{#if website}}
 				<div class="website">
-					<a href="{{website}}">Link</a>
+					<a href="{{website}}">{{website}}</icon></a>
 				</div>
 				{{/if}}
 				{{#if summary}}
