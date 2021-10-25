@@ -131,7 +131,7 @@
     },
     {
       "name": "k-flat Secure Indexing for encrypted databases",
-      "summary": "A secure indexing tool enabling query execution over encrypted datasets. It preprocesses the dataset to construct client-side mappings and uses them to wrap the dataset accordigly. It shows their runtime use, by automating the upload of the encypted dataset onto PostgresSQL and Redis, and querying them."
+      "summary": "A secure indexing tool enabling query execution over encrypted datasets. It preprocesses the dataset to construct client-side mappings and uses them to wrap the dataset accordingly. It shows their runtime use, by automating the upload of the encypted dataset onto PostgresSQL and Redis, and querying them."
     },
     {
       "name": "FreyaFS - a Mix&Slice virtual filesystem",
