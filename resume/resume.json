@@ -90,7 +90,8 @@
     {
       "name": "Multi-dimensional indexes for point and range queries on outsourced encrypted data",
       "publisher": "GLOBECOM '21",
-      "releaseDate": "(available soon)"
+      "releaseDate": "2021-12",
+      "website": "https://cs.unibg.it/seclab-papers/2021/GLOBECOM/multi-dimensional-indexes.pdf"
     },
     {
       "name": "I Told You Tomorrow: Practical Time-Locked Secrets using Smart Contracts",
@@ -102,7 +103,8 @@
       "name": "SEApp: Bringing Mandatory Access Control to Android Apps",
       "publisher": "USENIX Security '21",
       "releaseDate": "2021-08",
-      "website": "https://cs.unibg.it/seclab-papers/2021/USENIX/seapp.pdf"
+      "website": "https://cs.unibg.it/seclab-papers/2021/USENIX/seapp.pdf",
+      "summary": "CSAW '21 Applied Research Competition Finalist"
     },
     {
       "name": "Scalable Distributed Data Anonymization",
