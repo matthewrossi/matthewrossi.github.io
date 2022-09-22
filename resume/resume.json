@@ -88,6 +88,12 @@
   ],
   "publications": [
     {
+      "name": "Scalable Distributed Data Anonymization for Large Datasets",
+      "publisher": "Transactions on Big Data (Early Access)",
+      "releaseDate": "2022-09",
+      "website": "https://cs.unibg.it/seclab-papers/2022/TBD/mondrian-ext.pdf"
+    },
+    {
       "name": "Multi-dimensional indexes for point and range queries on outsourced encrypted data",
       "publisher": "GLOBECOM '21",
       "releaseDate": "2021-12",
