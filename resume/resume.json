@@ -181,7 +181,8 @@
       "keywords": [
         "Python",
         "Java",
-        "C/C++"
+        "C/C++",
+        "Rust"
       ]
     },
     {
@@ -193,12 +194,22 @@
       ]
     },
     {
-      "name": "Security & Privacy",
+      "name": "Security",
       "level": "",
       "keywords": [
         "SELinux",
+        "Landlock",
+        "seccomp-bpf",
+        "BPF"
+      ]
+    },
+    {
+      "name": "Privacy",
+      "level": "",
+      "keywords": [
         "k-anonymity",
-        "Differential Privacy"
+        "Differential Privacy",
+        "Fully homomorphic encyption"
       ]
     },
     {
@@ -223,7 +234,8 @@
       "level": "",
       "keywords": [
         "Docker",
-        "Docker Compose"
+        "Docker Compose",
+        "Kubernetes"
       ]
     }
   ],
@@ -245,14 +257,14 @@
       "name": "Soccer"
     },
     {
-      "name": "Videogames"
-    },
-    {
       "name": "Travel",
       "keywords": [
         "Backpacking",
         "Flights"
       ]
+    },
+    {
+      "name": "Videogames"
     }
   ],
   "references": [
