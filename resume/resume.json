@@ -7,7 +7,7 @@
     "email": "7518140101025b071a06061c351218141c195b161a18",
     "phone": "",
     "website": "https://matthewrossi.github.io/",
-    "summary": "I am a passionate developer who loves working on projects that matter. I work as a PhD student at Università degli Studi di Bergamo and my research focuses on computer security, mostly investigating the integration of security features in mobile systems, policy management and privacy of outsourced data. I love to solve problems and engage with projects that require me to learn new things.",
+    "summary": "I am a passionate developer who loves working on projects that matter. I work as a PhD student at Università degli Studi di Bergamo and my research focuses on computer security, mostly investigating the integration of security features in mobile & cloud systems, policy management and privacy of outsourced data. I love to solve problems and engage with projects that require me to learn new things.",
     "location": {},
     "profiles": [
       {
@@ -28,14 +28,16 @@
       "position": "Researcher",
       "website": "https://seclab.unibg.it/",
       "startDate": "2019",
-      "summary": "UniBG Security Lab is the Computer Security group at Università degli Studi di Bergamo. Research interests include cloud, mobile and systems security, with particular focus on policies and access control.",
+      "summary": "UniBG Security Lab is the Computer Security group at Università degli Studi di Bergamo. Research interests include cloud and mobile security, with particular focus on policies and access control.",
       "highlights": [
-        "Extended the implementation of SELinux in Android to support 3rd party app's specific policies",
+        "Extended the use of SELinux in Android to support 3rd party app's specific policies",
+        "Extended the secure by default approach of the Deno runtime to native code execution",
         "Developed a sanitization algorithm to achieve k-anonymity on large datasets with Apache Spark",
         "Developed a secure indexing tool enabling query execution over encrypted datasets",
-        "Developed an encrypted virtual filesystem based on Mix&Slice",
+        "Developed a protocol to deploy Time-Locks using Multi-Party Computation, threshold cryptography and smart contracts",
+        "Developed an encrypted virtual filesystem using Filesystem in Userspace (FUSE)",
         "Developed a policy engine evaluating access requests based on an ODRL-like policy language",
-        "Supervised 15+ thesis students"
+        "Supervised 20+ thesis students"
       ]
     },
     {
@@ -43,11 +45,12 @@
       "position": "Teaching Assistant",
       "website": "https://www.unibg.it/",
       "startDate": "2019",
-      "summary": "Teaching assistant for the bachelor's courses: \"Informatica (modulo di programmazione)\" and \"Basi di dati e Web\", and the master's course: \"Sicurezza dei sistemi informatici\". Lectures of these courses are about:",
+      "summary": "Teaching assistant for the bachelor's courses: \"Informatica (modulo di programmazione)\" and \"Basi di dati e Web\", and the master's courses: \"Advanced Data Management\" and \"Sicurezza dei sistemi informatici\". Lectures of these courses are about:",
       "highlights": [
         "Programming in Python",
         "Database technologies & Web development",
-        "Access control & Sanboxing"
+        "Access control & Sanboxing",
+        "Distributed data processing with Apache Spark"
       ]
     }
   ],
@@ -57,7 +60,7 @@
       "area": "Software Engineering",
       "studyType": "Ph.D. program in Engineering and Applied Sciences",
       "startDate": "2020",
-      "subject": "Mobile systems security & Privacy",
+      "subject": "Mobile & cloud security, Access control, Privacy",
       "supervisor": "Prof. Stefano Paraboschi"
     },
     {
@@ -138,7 +141,8 @@
       "summary": "A Dockerized Apache Spark-based version of Mondrian, a sanitization algorithm to achieve k-anonimity. This version of Mondrian is meant to perform sanitization over large datasets, and it is executed on an Apache Spark cluster with a varying number of executors."
     },
     {
-      "name": "k-flat Secure Indexing for encrypted databases",
+      "name": "Multi-Dimensional Flat Indexing for Encrypted Databases",
+      "website": "https://github.com/unibg-seclab/flat-index",
       "summary": "A secure indexing tool enabling query execution over encrypted datasets. It preprocesses the dataset to construct client-side mappings and uses them to wrap the dataset accordingly. It shows their runtime use, by automating the upload of the encrypted dataset to PostgresSQL and Redis, and querying them."
     },
     {

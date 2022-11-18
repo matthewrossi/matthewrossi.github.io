@@ -444,7 +444,7 @@ function decode() {
 			<div id="summary" class="row">
 				<div class="col-sm-8 col-sm-offset-4 col-xs-12">
 					<div class="summary">
-						<p class="lead">I am a passionate developer who loves working on projects that matter. I work as a PhD student at Università degli Studi di Bergamo and my research focuses on computer security, mostly investigating the integration of security features in mobile systems, policy management and privacy of outsourced data. I love to solve problems and engage with projects that require me to learn new things.</p>
+						<p class="lead">I am a passionate developer who loves working on projects that matter. I work as a PhD student at Università degli Studi di Bergamo and my research focuses on computer security, mostly investigating the integration of security features in mobile &amp; cloud systems, policy management and privacy of outsourced data. I love to solve problems and engage with projects that require me to learn new things.</p>
 					</div>
 				</div>
 			</div>
@@ -479,15 +479,17 @@ function decode() {
 					<a href="https://seclab.unibg.it/">https://seclab.unibg.it/</a>
 				</div>
 				<div class="summary">
-					<p>UniBG Security Lab is the Computer Security group at Università degli Studi di Bergamo. Research interests include cloud, mobile and systems security, with particular focus on policies and access control.</p>
+					<p>UniBG Security Lab is the Computer Security group at Università degli Studi di Bergamo. Research interests include cloud and mobile security, with particular focus on policies and access control.</p>
 				</div>
 				<ul class="highlights">
-					<li>Extended the implementation of SELinux in Android to support 3rd party app&#x27;s specific policies</li>
+					<li>Extended the use of SELinux in Android to support 3rd party app&#x27;s specific policies</li>
+					<li>Extended the secure by default approach of the Deno runtime to native code execution</li>
 					<li>Developed a sanitization algorithm to achieve k-anonymity on large datasets with Apache Spark</li>
 					<li>Developed a secure indexing tool enabling query execution over encrypted datasets</li>
-					<li>Developed an encrypted virtual filesystem based on Mix&amp;Slice</li>
+					<li>Developed a protocol to deploy Time-Locks using Multi-Party Computation, threshold cryptography and smart contracts</li>
+					<li>Developed an encrypted virtual filesystem using Filesystem in Userspace (FUSE)</li>
 					<li>Developed a policy engine evaluating access requests based on an ODRL-like policy language</li>
-					<li>Supervised 15+ thesis students</li>
+					<li>Supervised 20+ thesis students</li>
 				</ul>
 			</div>
 			<div class="item">
@@ -509,12 +511,13 @@ function decode() {
 					<a href="https://www.unibg.it/">https://www.unibg.it/</a>
 				</div>
 				<div class="summary">
-					<p>Teaching assistant for the bachelor&#x27;s courses: &quot;Informatica (modulo di programmazione)&quot; and &quot;Basi di dati e Web&quot;, and the master&#x27;s course: &quot;Sicurezza dei sistemi informatici&quot;. Lectures of these courses are about:</p>
+					<p>Teaching assistant for the bachelor&#x27;s courses: &quot;Informatica (modulo di programmazione)&quot; and &quot;Basi di dati e Web&quot;, and the master&#x27;s courses: &quot;Advanced Data Management&quot; and &quot;Sicurezza dei sistemi informatici&quot;. Lectures of these courses are about:</p>
 				</div>
 				<ul class="highlights">
 					<li>Programming in Python</li>
 					<li>Database technologies &amp; Web development</li>
 					<li>Access control &amp; Sanboxing</li>
+					<li>Distributed data processing with Apache Spark</li>
 				</ul>
 			</div>
 		</div>
@@ -654,7 +657,10 @@ function decode() {
 				</div>
 			</div>
 			<div class="item">
-				<h3 class="name">k-flat Secure Indexing for encrypted databases</h3>
+				<h3 class="name">Multi-Dimensional Flat Indexing for Encrypted Databases</h3>
+				<div class="website">
+					<a href="https://github.com/unibg-seclab/flat-index">https://github.com/unibg-seclab/flat-index</a>
+				</div>
 				<div class="summary">
 					<p>A secure indexing tool enabling query execution over encrypted datasets. It preprocesses the dataset to construct client-side mappings and uses them to wrap the dataset accordingly. It shows their runtime use, by automating the upload of the encrypted dataset to PostgresSQL and Redis, and querying them.</p>
 				</div>
