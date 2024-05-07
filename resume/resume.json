@@ -184,7 +184,6 @@
       "level": "",
       "keywords": [
         "Python",
-        "Java",
         "C/C++",
         "Rust"
       ]
@@ -194,34 +193,44 @@
       "level": "",
       "keywords": [
         "Ubuntu",
-        "Regolith Linux"
+        "Regolith Desktop",
+        "Fish Shell"
       ]
     },
     {
       "name": "Security",
       "level": "",
       "keywords": [
-        "SELinux",
+        "eBPF",
         "Landlock",
-        "seccomp-bpf",
-        "BPF"
-      ]
-    },
-    {
-      "name": "Privacy",
-      "level": "",
-      "keywords": [
-        "k-anonymity",
-        "Differential Privacy",
-        "Fully homomorphic encyption"
+        "SELinux"
       ]
     },
     {
       "name": "Engineering",
       "level": "",
       "keywords": [
-        "Version Control",
-        "Databases"
+        "Communication",
+        "Problem Solving",
+        "Teamwork"
+      ]
+    },
+    {
+      "name": "Research",
+      "level": "",
+      "keywords": [
+        "LaTeX",
+        "Networking",
+        "Public Speaking"
+      ]
+    },
+    {
+      "name": "DevOps",
+      "level": "",
+      "keywords": [
+        "Git",
+        "Docker",
+        "Kubernetes"
       ]
     },
     {
@@ -229,17 +238,17 @@
       "level": "",
       "keywords": [
         "Apache Spark",
-        "Java Message Service",
-        "JAX-RS"
+        "Apache Hadoop",
+        "MinIO"
       ]
     },
     {
-      "name": "DevOps",
+      "name": "Databases",
       "level": "",
       "keywords": [
-        "Docker",
-        "Docker Compose",
-        "Kubernetes"
+        "PostgreSQL",
+        "Redis",
+        "SQLite"
       ]
     }
   ],
