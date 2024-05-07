@@ -258,14 +258,14 @@
       "name": "Technology"
     },
     {
-      "name": "Soccer"
-    },
-    {
       "name": "Travel",
       "keywords": [
         "Backpacking",
         "Flights"
       ]
+    },
+    {
+      "name": "Soccer"
     },
     {
       "name": "Videogames"
