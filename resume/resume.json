@@ -91,42 +91,70 @@
   ],
   "publications": [
     {
+      "name": "Supporting Data Owner Control in IPFS Networks",
+      "publisher": "IEEE International Conference on Communications (ICC)",
+      "releaseDate": "2024-06-09",
+      "website": "https://cs.unibg.it/seclab-papers/2024/ICC/ipfs.pdf"
+    },
+    {
+      "name": "Lightweight Cloud Application Sandboxing",
+      "publisher": "IEEE International Conference on Cloud Computing Technology and Science (CLOUDCOM)",
+      "releaseDate": "2023-12-4",
+      "website": "https://cs.unibg.it/seclab-papers/2023/CLOUDCOM/dmng.pdf"
+    },
+    {
+      "name": "NatiSand: Native Code Sandboxing for JavaScript Runtimes",
+      "publisher": "International Symposium on Research in Attacks, Intrusions and Defenses (RAID)",
+      "releaseDate": "2023-10-16",
+      "website": "https://cs.unibg.it/seclab-papers/2023/RAID/natisand.pdf"
+    },
+    {
+      "name": "Leveraging eBPF to enhance sandboxing of WebAssembly runtimes",
+      "publisher": "ACM ASIA Conference on Computer and Communications Security (ASIACCS)",
+      "releaseDate": "2023-07-10",
+      "website": "https://cs.unibg.it/seclab-papers/2023/ASIACCS/poster/enhance-wasm-sandbox.pdf"
+    },
+    {
+      "name": "Cage4Deno: A Fine-Grained Sandbox for Deno Subprocesses",
+      "publisher": "ACM ASIA Conference on Computer and Communications Security (ASIACCS)",
+      "releaseDate": "2023-07-10",
+      "website": "https://cs.unibg.it/seclab-papers/2023/ASIACCS/paper/cage4deno.pdf"
+    },
+    {
       "name": "Scalable Distributed Data Anonymization for Large Datasets",
       "publisher": "Transactions on Big Data (Early Access)",
-      "releaseDate": "2022-09",
+      "releaseDate": "2022-09-19",
       "website": "https://cs.unibg.it/seclab-papers/2022/TBD/mondrian-ext.pdf"
     },
     {
       "name": "Multi-dimensional indexes for point and range queries on outsourced encrypted data",
-      "publisher": "GLOBECOM '21",
-      "releaseDate": "2021-12",
+      "publisher": "IEEE Global Communications Conference (GLOBECOM)",
+      "releaseDate": "2021-12-07",
       "website": "https://cs.unibg.it/seclab-papers/2021/GLOBECOM/multi-dimensional-indexes.pdf"
     },
     {
       "name": "I Told You Tomorrow: Practical Time-Locked Secrets using Smart Contracts",
-      "publisher": "ARES '21",
-      "releaseDate": "2021-08",
+      "publisher": "International Conference on Availability, Reliability and Security (ARES)",
+      "releaseDate": "2021-08-17",
       "website": "https://cs.unibg.it/seclab-papers/2021/ARES/ityt.pdf"
     },
     {
       "name": "SEApp: Bringing Mandatory Access Control to Android Apps",
-      "publisher": "USENIX Security '21",
-      "releaseDate": "2021-08",
-      "website": "https://cs.unibg.it/seclab-papers/2021/USENIX/seapp.pdf",
-      "summary": "CSAW '21 Applied Research Competition Finalist"
+      "publisher": "USENIX Security Symposium (USENIX Security)",
+      "releaseDate": "2021-08-11",
+      "website": "https://cs.unibg.it/seclab-papers/2021/USENIX/seapp.pdf"
     },
     {
       "name": "Scalable Distributed Data Anonymization",
-      "publisher": "PerCom '21",
-      "releaseDate": "2021-03",
+      "publisher": "IEEE International Conference on Pervasive Computing and Communications (PerCom)",
+      "releaseDate": "2021-03-22",
       "website": "https://cs.unibg.it/seclab-papers/2021/PerCom/mondrian.pdf"
     },
     {
       "name": "Artifact: Scalable Distributed Data Anonymization",
-      "publisher": "PerCom '21",
-      "releaseDate": "2021-03",
-      "website": "https://cs.unibg.it/seclab-papers/2021/PerCom/mondrian-artifact.pdf",
-      "summary": "Best Artifact Award"
+      "publisher": "IEEE International Conference on Pervasive Computing and Communications (PerCom)",
+      "releaseDate": "2021-03-22",
+      "website": "https://cs.unibg.it/seclab-papers/2021/PerCom/mondrian-artifact.pdf"
     }
   ],
   "projects": [
