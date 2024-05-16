@@ -38,6 +38,38 @@ h2.section-title {
 	line-height: 1.8em;
 }
 
+.readmore {
+	mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
+}
+
+.readmore.expand {
+	mask-image: none;
+}
+
+.content {
+	display: none;
+}
+
+.content.expand {
+	display: block;
+}
+
+button {
+	display: block;
+	width: 100%;
+	font-weight: bold;
+	color: #fff;
+	background-color: #999;
+	padding: 3px 13px;
+	border-radius: 3px;
+	border: none;
+	transition: all 0.5s ease;
+}
+
+button:hover {
+	background-color: #333;
+}
+
 #work h2.section-title {
 	line-height: 1.2em;
 }
@@ -124,7 +156,7 @@ h2.section-title {
 	color: #0976b4;
 }
 #profiles .fa-github:hover {
-	color: #999;
+	color: #000;
 }
 #profiles .fa-tumblr:hover {
 	color: #35465c;

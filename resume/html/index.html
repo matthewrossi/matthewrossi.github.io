@@ -56,6 +56,38 @@ h2.section-title {
 	line-height: 1.8em;
 }
 
+.readmore {
+	mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
+}
+
+.readmore.expand {
+	mask-image: none;
+}
+
+.content {
+	display: none;
+}
+
+.content.expand {
+	display: block;
+}
+
+button {
+	display: block;
+	width: 100%;
+	font-weight: bold;
+	color: #fff;
+	background-color: #999;
+	padding: 3px 13px;
+	border-radius: 3px;
+	border: none;
+	transition: all 0.5s ease;
+}
+
+button:hover {
+	background-color: #333;
+}
+
 #work h2.section-title {
 	line-height: 1.2em;
 }
@@ -142,7 +174,7 @@ h2.section-title {
 	color: #0976b4;
 }
 #profiles .fa-github:hover {
-	color: #999;
+	color: #000;
 }
 #profiles .fa-tumblr:hover {
 	color: #35465c;
@@ -378,7 +410,7 @@ icon.large {
     var keyInHex = encodedString.substr(0, 2);
     var key = parseInt(keyInHex, 16);
     for (var n = 2; n < encodedString.length; n += 2) {
-        var charInHex = encodedString.substr(n, 2)
+        var charInHex = encodedString.substr(n, 2);
         var char = parseInt(charInHex, 16);
         var output = char ^ key;
         email += String.fromCharCode(output);
@@ -396,7 +428,30 @@ function updateAnchor(el) {
 function decode() {
     var allElements = document.getElementsByClassName("eml-protected");
     for (var i = 0; i < allElements.length; i++) {
-        updateAnchor(allElements[i])
+        updateAnchor(allElements[i]);
+    }
+}
+
+function toggle(section) {
+    var sectionDOM = document.getElementById(section);
+    var readmore = sectionDOM.getElementsByClassName("readmore")[0];
+    var contents = sectionDOM.getElementsByClassName("content");
+    var button = sectionDOM.getElementsByTagName('button')[0];
+
+    var isExpanded = readmore.classList.contains("expand");
+
+    if (!isExpanded) {
+        readmore.classList.add("expand");
+        for (const elem of contents) {
+            elem.classList.add("expand");
+        }
+        button.innerHTML = "Show only three latest " + section;
+    } else {
+        readmore.classList.remove("expand");
+        for (const elem of contents) {
+            elem.classList.remove("expand");
+        }
+        button.innerHTML = "Show all " + section;
     }
 }
 
@@ -676,7 +731,7 @@ function decode() {
 		</div>
 	</section>
 
-	<section id="project" class="row">
+	<section id="projects" class="row">
 		<div class="col-sm-4">
 			<div class="row">
 				<div class="col-xs-2">
@@ -688,78 +743,81 @@ function decode() {
 			</div>
 		</div>
 		<div class="col-sm-8">
-			<div class="item">
-				<h3 class="name">SEApp: Bringing Mandatory Access Control to Android Apps</h3>
-				<div class="website">
-					<a href="https://github.com/matthewrossi/seapp">https://github.com/matthewrossi/seapp</a>
+			<div class="readmore">
+				<div class="item">
+					<h3 class="name">SEApp: Bringing Mandatory Access Control to Android Apps</h3>
+					<div class="website">
+						<a href="https://github.com/matthewrossi/seapp">https://github.com/matthewrossi/seapp</a>
+					</div>
+					<div class="summary">
+						<p>Design and implemention of a SELinux solution to extend the Android&#x27;s SELinux implementation to support 3rd party app&#x27;s defined policy. The repository provides a set of changes to the Android Open Source Project.</p>
+					</div>
 				</div>
-				<div class="summary">
-					<p>Design and implemention of a SELinux solution to extend the Android&#x27;s SELinux implementation to support 3rd party app&#x27;s defined policy. The repository provides a set of changes to the Android Open Source Project.</p>
+				<div class="item">
+					<h3 class="name">Anonymization in Apache Spark</h3>
+					<div class="website">
+						<a href="https://github.com/mosaicrown/mondrian">https://github.com/mosaicrown/mondrian</a>
+					</div>
+					<div class="summary">
+						<p>A Dockerized Apache Spark-based version of Mondrian, a sanitization algorithm to achieve k-anonimity. This version of Mondrian is meant to perform sanitization over large datasets, and it is executed on an Apache Spark cluster with a varying number of executors.</p>
+					</div>
+				</div>
+				<div class="item">
+					<h3 class="name">Multi-Dimensional Flat Indexing for Encrypted Databases</h3>
+					<div class="website">
+						<a href="https://github.com/unibg-seclab/flat-index">https://github.com/unibg-seclab/flat-index</a>
+					</div>
+					<div class="summary">
+						<p>A secure indexing tool enabling query execution over encrypted datasets. It preprocesses the dataset to construct client-side mappings and uses them to wrap the dataset accordingly. It shows their runtime use, by automating the upload of the encrypted dataset to PostgresSQL and Redis, and querying them.</p>
+					</div>
+				</div>
+				<div class="item content">
+					<h3 class="name">FreyaFS - a Mix&amp;Slice virtual filesystem</h3>
+					<div class="website">
+						<a href="https://github.com/mosaicrown/freya-fs">https://github.com/mosaicrown/freya-fs</a>
+					</div>
+					<div class="summary">
+						<p>An encrypted virtual filesystem implemented on top of Filesystem in Userspace (FUSE) that persists data using the Mix&amp;Slice all-or-nothing transform.</p>
+					</div>
+				</div>
+				<div class="item content">
+					<h3 class="name">ODRL-like Policy Engine</h3>
+					<div class="website">
+						<a href="https://github.com/mosaicrown/policy-engine">https://github.com/mosaicrown/policy-engine</a>
+					</div>
+					<div class="summary">
+						<p>A policy engine evaluating access requests based on an ODRL-like policy language. It includes a SQL front end to extract the targets needed to perform a given query and therefore automate the target identification on relational databases access requests.</p>
+					</div>
+				</div>
+				<div class="item content">
+					<h3 class="name">Music Recommender</h3>
+					<div class="website">
+						<a href="https://github.com/matthewrossi/music-recommender">https://github.com/matthewrossi/music-recommender</a>
+					</div>
+					<div class="summary">
+						<p>A recommender system to suggest songs a user would likely add to one of her playlists based on: other tracks in the same playlist, other playlists created by the same user and other playlists created by other users.</p>
+					</div>
+				</div>
+				<div class="item content">
+					<h3 class="name">Il Dottore Artificiale</h3>
+					<div class="website">
+						<a href="https://github.com/matthewrossi/dottore-artificiale">https://github.com/matthewrossi/dottore-artificiale</a>
+					</div>
+					<div class="summary">
+						<p>A simplified implementation of a rule-based expert system in the medical field, with the goal to filter diseases a patient may be suffering based on the symptoms she presents. A chatbot interacts with the patient by generating questions and parsing their answers with regular expressions.</p>
+					</div>
+				</div>
+				<div class="item content">
+					<h3 class="name">Command Prompt Snake</h3>
+					<div class="website">
+						<a href="https://github.com/matthewrossi/command-prompt-snake">https://github.com/matthewrossi/command-prompt-snake</a>
+					</div>
+					<div class="summary">
+						<p>An implementation of Snake for the Windows Command Prompt.</p>
+					</div>
 				</div>
 			</div>
-			<div class="item">
-				<h3 class="name">Anonymization in Apache Spark</h3>
-				<div class="website">
-					<a href="https://github.com/mosaicrown/mondrian">https://github.com/mosaicrown/mondrian</a>
-				</div>
-				<div class="summary">
-					<p>A Dockerized Apache Spark-based version of Mondrian, a sanitization algorithm to achieve k-anonimity. This version of Mondrian is meant to perform sanitization over large datasets, and it is executed on an Apache Spark cluster with a varying number of executors.</p>
-				</div>
-			</div>
-			<div class="item">
-				<h3 class="name">Multi-Dimensional Flat Indexing for Encrypted Databases</h3>
-				<div class="website">
-					<a href="https://github.com/unibg-seclab/flat-index">https://github.com/unibg-seclab/flat-index</a>
-				</div>
-				<div class="summary">
-					<p>A secure indexing tool enabling query execution over encrypted datasets. It preprocesses the dataset to construct client-side mappings and uses them to wrap the dataset accordingly. It shows their runtime use, by automating the upload of the encrypted dataset to PostgresSQL and Redis, and querying them.</p>
-				</div>
-			</div>
-			<div class="item">
-				<h3 class="name">FreyaFS - a Mix&amp;Slice virtual filesystem</h3>
-				<div class="website">
-					<a href="https://github.com/mosaicrown/freya-fs">https://github.com/mosaicrown/freya-fs</a>
-				</div>
-				<div class="summary">
-					<p>An encrypted virtual filesystem implemented on top of Filesystem in Userspace (FUSE) that persists data using the Mix&amp;Slice all-or-nothing transform.</p>
-				</div>
-			</div>
-			<div class="item">
-				<h3 class="name">ODRL-like Policy Engine</h3>
-				<div class="website">
-					<a href="https://github.com/mosaicrown/policy-engine">https://github.com/mosaicrown/policy-engine</a>
-				</div>
-				<div class="summary">
-					<p>A policy engine evaluating access requests based on an ODRL-like policy language. It includes a SQL front end to extract the targets needed to perform a given query and therefore automate the target identification on relational databases access requests.</p>
-				</div>
-			</div>
-			<div class="item">
-				<h3 class="name">Music Recommender</h3>
-				<div class="website">
-					<a href="https://github.com/matthewrossi/music-recommender">https://github.com/matthewrossi/music-recommender</a>
-				</div>
-				<div class="summary">
-					<p>A recommender system to suggest songs a user would likely add to one of her playlists based on: other tracks in the same playlist, other playlists created by the same user and other playlists created by other users.</p>
-				</div>
-			</div>
-			<div class="item">
-				<h3 class="name">Il Dottore Artificiale</h3>
-				<div class="website">
-					<a href="https://github.com/matthewrossi/dottore-artificiale">https://github.com/matthewrossi/dottore-artificiale</a>
-				</div>
-				<div class="summary">
-					<p>A simplified implementation of a rule-based expert system in the medical field, with the goal to filter diseases a patient may be suffering based on the symptoms she presents. A chatbot interacts with the patient by generating questions and parsing their answers with regular expressions.</p>
-				</div>
-			</div>
-			<div class="item">
-				<h3 class="name">Command Prompt Snake</h3>
-				<div class="website">
-					<a href="https://github.com/matthewrossi/command-prompt-snake">https://github.com/matthewrossi/command-prompt-snake</a>
-				</div>
-				<div class="summary">
-					<p>An implementation of Snake for the Windows Command Prompt.</p>
-				</div>
-			</div>
+			<button onclick="toggle('projects')"> Show all projects</button>
 		</div>
 	</section>
 
@@ -799,193 +857,196 @@ function decode() {
 			</div>
 		</div>
 		<div class="col-sm-8">
-			<div class="item">
-				<div class="name">
-					<h3>Supporting Data Owner Control in IPFS Networks</h3>
+			<div class="readmore">
+				<div class="item">
+					<div class="name">
+						<h3>Supporting Data Owner Control in IPFS Networks</h3>
+					</div>
+					<div class="publisher">
+						<p class="lead">IEEE International Conference on Communications (ICC)</p>
+					</div>
+					<div class="date">
+						2024-06-09
+					</div>
+					<div class="website">
+						<a href="https://cs.unibg.it/seclab-papers/2024/ICC/ipfs.pdf">https://cs.unibg.it/seclab-papers/2024/ICC/ipfs.pdf</icon></a>
+					</div>
+					<div class="summary">
+						<p>Decentralized storage architectures are emerging as valid complementary solutions to cloud-based storage services. InterPlanetary File System (IPFS) is one of the most well-known distributed file storage protocols with wide adoption, good performance, and a variety of applications built over it. However, IPFS does not natively support data privacy and its decentralized nature limits the ability of data owners to maintain control over their resources and force their deletion. In this paper, we propose Mix-IPFS, an approach that addresses these shortcomings while exhibiting negligible overhead.</p>
+					</div>
 				</div>
-				<div class="publisher">
-					<p class="lead">IEEE International Conference on Communications (ICC)</p>
+				<div class="item">
+					<div class="name">
+						<h3>Lightweight Cloud Application Sandboxing</h3>
+					</div>
+					<div class="publisher">
+						<p class="lead">IEEE International Conference on Cloud Computing Technology and Science (CLOUDCOM)</p>
+					</div>
+					<div class="date">
+						2023-12-4
+					</div>
+					<div class="website">
+						<a href="https://cs.unibg.it/seclab-papers/2023/CLOUDCOM/dmng.pdf">https://cs.unibg.it/seclab-papers/2023/CLOUDCOM/dmng.pdf</icon></a>
+					</div>
+					<div class="summary">
+						<p>Modern cloud applications can quickly grow to an elaborate and intricate tangle of services. In this scenario, paying attention to security aspects is important to mitigate the impact of incidents. In this paper, we address the problem proposing an approach that restricts application access to file system resources with a resource-based granularity. To this end, we develop a flexible and intuitive tool that relies on instrumentation to collect, merge, and audit the activity traces generated by any application component. We then demonstrate how this information can be used to introduce fine-grained sandboxes with minimal performance footprint.</p>
+					</div>
 				</div>
-				<div class="date">
-					2024-06-09
+				<div class="item">
+					<div class="name">
+						<h3>NatiSand: Native Code Sandboxing for JavaScript Runtimes</h3>
+					</div>
+					<div class="publisher">
+						<p class="lead">International Symposium on Research in Attacks, Intrusions and Defenses (RAID)</p>
+					</div>
+					<div class="date">
+						2023-10-16
+					</div>
+					<div class="website">
+						<a href="https://cs.unibg.it/seclab-papers/2023/RAID/natisand.pdf">https://cs.unibg.it/seclab-papers/2023/RAID/natisand.pdf</icon></a>
+					</div>
+					<div class="summary">
+						<p>JavaScript runtimes (e.g., Node.js, Deno, and Bun) render code in a secure and isolated environment, but when they execute binary programs and shared libraries, no isolation guarantees are provided. In this paper we propose NatiSand, a component for JavaScript runtimes that leverages Landlock, eBPF, and Seccomp to control the filesystem, Inter-Process Communication (IPC), and network resources available to binary programs and shared libraries. The approach requires no changes to the application code and offers the user a simple interface. To demonstrate the effectiveness and efficiency of NatiSand we reproduced a number of vulnerabilities affecting third-party code, showing their mitigation and exhibiting competitive peformance with state of the art code sandboxing solutions.</p>
+					</div>
 				</div>
-				<div class="website">
-					<a href="https://cs.unibg.it/seclab-papers/2024/ICC/ipfs.pdf">https://cs.unibg.it/seclab-papers/2024/ICC/ipfs.pdf</icon></a>
+				<div class="item content">
+					<div class="name">
+						<h3>Leveraging eBPF to enhance sandboxing of WebAssembly runtimes</h3>
+					</div>
+					<div class="publisher">
+						<p class="lead">ACM ASIA Conference on Computer and Communications Security (ASIACCS)</p>
+					</div>
+					<div class="date">
+						2023-07-10
+					</div>
+					<div class="website">
+						<a href="https://cs.unibg.it/seclab-papers/2023/ASIACCS/poster/enhance-wasm-sandbox.pdf">https://cs.unibg.it/seclab-papers/2023/ASIACCS/poster/enhance-wasm-sandbox.pdf</icon></a>
+					</div>
+					<div class="summary">
+						<p>WebAssembly is a binary instruction format with strong security guarantees by design. While originally designed to run inside web browsers, there are now numerous runtimes that bring WebAssembly outside of it. The need to access system resources in these environments has led to the definition of the WebAssembly System Interface (WASI). With specific regard to the file system, WASI requires runtimes to implement security checks to only permit access to a predefined list of directories. While this is a step in the right direction, the approach not only suffers from poor granularity, but is also error-prone and has led to security issues. In this paper we replace the built-in security checks with eBPF programs, enabling the introduction of fine-grained per-module policies. Preliminary experiments confirm the efficiency of the solution.</p>
+					</div>
 				</div>
-				<div class="summary">
-					<p>Decentralized storage architectures are emerging as valid complementary solutions to cloud-based storage services. InterPlanetary File System (IPFS) is one of the most well-known distributed file storage protocols with wide adoption, good performance, and a variety of applications built over it. However, IPFS does not natively support data privacy and its decentralized nature limits the ability of data owners to maintain control over their resources and force their deletion. In this paper, we propose Mix-IPFS, an approach that addresses these shortcomings while exhibiting negligible overhead.</p>
+				<div class="item content">
+					<div class="name">
+						<h3>Cage4Deno: A Fine-Grained Sandbox for Deno Subprocesses</h3>
+					</div>
+					<div class="publisher">
+						<p class="lead">ACM ASIA Conference on Computer and Communications Security (ASIACCS)</p>
+					</div>
+					<div class="date">
+						2023-07-10
+					</div>
+					<div class="website">
+						<a href="https://cs.unibg.it/seclab-papers/2023/ASIACCS/paper/cage4deno.pdf">https://cs.unibg.it/seclab-papers/2023/ASIACCS/paper/cage4deno.pdf</icon></a>
+					</div>
+					<div class="summary">
+						<p>Deno is a runtime for JavaScript and TypeScript that is receiving great interest by developers, and is increasingly used for the construction of back-ends of web applications. A primary goal of Deno is to provide a secure and isolated environment for the execution of JavaScript programs. However this protection does not extend to the execution of subprocesses. In this paper we propose Cage4Deno, a set of modifications to Deno enabling the creation of fine-grained sandboxes for the execution of subprocesses by using Landlock and eBPF. Experiments showcase the sandbox effectiveness against a number of exploits and prove the efficiency of the proposal.</p>
+					</div>
+				</div>
+				<div class="item content">
+					<div class="name">
+						<h3>Scalable Distributed Data Anonymization for Large Datasets</h3>
+					</div>
+					<div class="publisher">
+						<p class="lead">Transactions on Big Data (Early Access)</p>
+					</div>
+					<div class="date">
+						2022-09-19
+					</div>
+					<div class="website">
+						<a href="https://cs.unibg.it/seclab-papers/2022/TBD/mondrian-ext.pdf">https://cs.unibg.it/seclab-papers/2022/TBD/mondrian-ext.pdf</icon></a>
+					</div>
+					<div class="summary">
+						<p>k-Anonymity and ℓ-diversity are two well-known privacy metrics that guarantee protection of the respondents of a dataset by obfuscating information that can disclose their identities and sensitive information. Existing solutions assume to operate in a centralized scenario, and therefore cannot scale. In this paper, we propose a solution enforcing both k-anonymity and ℓ-diversity in a distributed manner with the use of Apache Spark. The experimental evaluation shows that our solution provides scalability without affecting the quality of the resulting anonymization.</p>
+					</div>
+				</div>
+				<div class="item content">
+					<div class="name">
+						<h3>Multi-dimensional indexes for point and range queries on outsourced encrypted data</h3>
+					</div>
+					<div class="publisher">
+						<p class="lead">IEEE Global Communications Conference (GLOBECOM)</p>
+					</div>
+					<div class="date">
+						2021-12-07
+					</div>
+					<div class="website">
+						<a href="https://cs.unibg.it/seclab-papers/2021/GLOBECOM/multi-dimensional-indexes.pdf">https://cs.unibg.it/seclab-papers/2021/GLOBECOM/multi-dimensional-indexes.pdf</icon></a>
+					</div>
+					<div class="summary">
+						<p>An approach for indexing encrypted data stored at external providers to enable provider-side evaluation of queries. The approach supports the evaluation of point and range conditions on multiple attributes, and protects data against static frequency-based inferences by clustering tuples in fixed-size groups that are mapped to the same index values. The experiments evaluate query performance and client-storage requirements, and confirm the efficiency of our solution.</p>
+					</div>
+				</div>
+				<div class="item content">
+					<div class="name">
+						<h3>I Told You Tomorrow: Practical Time-Locked Secrets using Smart Contracts</h3>
+					</div>
+					<div class="publisher">
+						<p class="lead">International Conference on Availability, Reliability and Security (ARES)</p>
+					</div>
+					<div class="date">
+						2021-08-17
+					</div>
+					<div class="website">
+						<a href="https://cs.unibg.it/seclab-papers/2021/ARES/ityt.pdf">https://cs.unibg.it/seclab-papers/2021/ARES/ityt.pdf</icon></a>
+					</div>
+					<div class="summary">
+						<p>Time-Locks enable the release of a secret at a future point in time. Many approaches implement Time-Locks as cryptographic puzzles, binding the time span for the recovery of the secret to the time to solve the puzzle. To overcome this limitation, we propose I Told You Tomorrow (ITYT), a novel way of implementing time-locked secrets based on smart contracts. ITYT relies on the blockchain to measure the elapse of time, and it combines threshold cryptography with economic incentives and penalties to replace cryptographic puzzles. We analyze its resiliency to attacks with the help of economic game theory and demonstrate the low cost and limited resource consumption of the approach with our experiments.</p>
+					</div>
+				</div>
+				<div class="item content">
+					<div class="name">
+						<h3>SEApp: Bringing Mandatory Access Control to Android Apps</h3>
+					</div>
+					<div class="publisher">
+						<p class="lead">USENIX Security Symposium (USENIX Security)</p>
+					</div>
+					<div class="date">
+						2021-08-11
+					</div>
+					<div class="website">
+						<a href="https://cs.unibg.it/seclab-papers/2021/USENIX/seapp.pdf">https://cs.unibg.it/seclab-papers/2021/USENIX/seapp.pdf</icon></a>
+					</div>
+					<div class="summary">
+						<p>The Android security model focuses on to the protection of system components and secure the interactions between apps. However, app developers have no way to isolate internal components of their applications. Our solution overcomes this limitation, giving developers the power to define ad-hoc Mandatory Access Control (MAC) policies for their apps. This is a natural evolution of the security mechanisms already available in Android, and can help guarantee user privacy even in the presence of third-party components.</p>
+					</div>
+				</div>
+				<div class="item content">
+					<div class="name">
+						<h3>Scalable Distributed Data Anonymization</h3>
+					</div>
+					<div class="publisher">
+						<p class="lead">IEEE International Conference on Pervasive Computing and Communications (PerCom)</p>
+					</div>
+					<div class="date">
+						2021-03-22
+					</div>
+					<div class="website">
+						<a href="https://cs.unibg.it/seclab-papers/2021/PerCom/mondrian.pdf">https://cs.unibg.it/seclab-papers/2021/PerCom/mondrian.pdf</icon></a>
+					</div>
+					<div class="summary">
+						<p>An approach for enabling distributed anonymization of sensor data using an arbitrary number of workers with Apache Spark. The experimental evaluation shows that the proposed approach is scalable and does not affect the quality of the anonymized dataset.</p>
+					</div>
+				</div>
+				<div class="item content">
+					<div class="name">
+						<h3>Artifact: Scalable Distributed Data Anonymization</h3>
+					</div>
+					<div class="publisher">
+						<p class="lead">IEEE International Conference on Pervasive Computing and Communications (PerCom)</p>
+					</div>
+					<div class="date">
+						2021-03-22
+					</div>
+					<div class="website">
+						<a href="https://cs.unibg.it/seclab-papers/2021/PerCom/mondrian-artifact.pdf">https://cs.unibg.it/seclab-papers/2021/PerCom/mondrian-artifact.pdf</icon></a>
+					</div>
+					<div class="summary">
+						<p>The paper describes the prototype of Scalable Distributed Data Anonymization, and how to reproduce its experiments.</p>
+					</div>
 				</div>
 			</div>
-			<div class="item">
-				<div class="name">
-					<h3>Lightweight Cloud Application Sandboxing</h3>
-				</div>
-				<div class="publisher">
-					<p class="lead">IEEE International Conference on Cloud Computing Technology and Science (CLOUDCOM)</p>
-				</div>
-				<div class="date">
-					2023-12-4
-				</div>
-				<div class="website">
-					<a href="https://cs.unibg.it/seclab-papers/2023/CLOUDCOM/dmng.pdf">https://cs.unibg.it/seclab-papers/2023/CLOUDCOM/dmng.pdf</icon></a>
-				</div>
-				<div class="summary">
-					<p>Modern cloud applications can quickly grow to an elaborate and intricate tangle of services. In this scenario, paying attention to security aspects is important to mitigate the impact of incidents. In this paper, we address the problem proposing an approach that restricts application access to file system resources with a resource-based granularity. To this end, we develop a flexible and intuitive tool that relies on instrumentation to collect, merge, and audit the activity traces generated by any application component. We then demonstrate how this information can be used to introduce fine-grained sandboxes with minimal performance footprint.</p>
-				</div>
-			</div>
-			<div class="item">
-				<div class="name">
-					<h3>NatiSand: Native Code Sandboxing for JavaScript Runtimes</h3>
-				</div>
-				<div class="publisher">
-					<p class="lead">International Symposium on Research in Attacks, Intrusions and Defenses (RAID)</p>
-				</div>
-				<div class="date">
-					2023-10-16
-				</div>
-				<div class="website">
-					<a href="https://cs.unibg.it/seclab-papers/2023/RAID/natisand.pdf">https://cs.unibg.it/seclab-papers/2023/RAID/natisand.pdf</icon></a>
-				</div>
-				<div class="summary">
-					<p>JavaScript runtimes (e.g., Node.js, Deno, and Bun) render code in a secure and isolated environment, but when they execute binary programs and shared libraries, no isolation guarantees are provided. In this paper we propose NatiSand, a component for JavaScript runtimes that leverages Landlock, eBPF, and Seccomp to control the filesystem, Inter-Process Communication (IPC), and network resources available to binary programs and shared libraries. The approach requires no changes to the application code and offers the user a simple interface. To demonstrate the effectiveness and efficiency of NatiSand we reproduced a number of vulnerabilities affecting third-party code, showing their mitigation and exhibiting competitive peformance with state of the art code sandboxing solutions.</p>
-				</div>
-			</div>
-			<div class="item">
-				<div class="name">
-					<h3>Leveraging eBPF to enhance sandboxing of WebAssembly runtimes</h3>
-				</div>
-				<div class="publisher">
-					<p class="lead">ACM ASIA Conference on Computer and Communications Security (ASIACCS)</p>
-				</div>
-				<div class="date">
-					2023-07-10
-				</div>
-				<div class="website">
-					<a href="https://cs.unibg.it/seclab-papers/2023/ASIACCS/poster/enhance-wasm-sandbox.pdf">https://cs.unibg.it/seclab-papers/2023/ASIACCS/poster/enhance-wasm-sandbox.pdf</icon></a>
-				</div>
-				<div class="summary">
-					<p>WebAssembly is a binary instruction format with strong security guarantees by design. While originally designed to run inside web browsers, there are now numerous runtimes that bring WebAssembly outside of it. The need to access system resources in these environments has led to the definition of the WebAssembly System Interface (WASI). With specific regard to the file system, WASI requires runtimes to implement security checks to only permit access to a predefined list of directories. While this is a step in the right direction, the approach not only suffers from poor granularity, but is also error-prone and has led to security issues. In this paper we replace the built-in security checks with eBPF programs, enabling the introduction of fine-grained per-module policies. Preliminary experiments confirm the efficiency of the solution.</p>
-				</div>
-			</div>
-			<div class="item">
-				<div class="name">
-					<h3>Cage4Deno: A Fine-Grained Sandbox for Deno Subprocesses</h3>
-				</div>
-				<div class="publisher">
-					<p class="lead">ACM ASIA Conference on Computer and Communications Security (ASIACCS)</p>
-				</div>
-				<div class="date">
-					2023-07-10
-				</div>
-				<div class="website">
-					<a href="https://cs.unibg.it/seclab-papers/2023/ASIACCS/paper/cage4deno.pdf">https://cs.unibg.it/seclab-papers/2023/ASIACCS/paper/cage4deno.pdf</icon></a>
-				</div>
-				<div class="summary">
-					<p>Deno is a runtime for JavaScript and TypeScript that is receiving great interest by developers, and is increasingly used for the construction of back-ends of web applications. A primary goal of Deno is to provide a secure and isolated environment for the execution of JavaScript programs. However this protection does not extend to the execution of subprocesses. In this paper we propose Cage4Deno, a set of modifications to Deno enabling the creation of fine-grained sandboxes for the execution of subprocesses by using Landlock and eBPF. Experiments showcase the sandbox effectiveness against a number of exploits and prove the efficiency of the proposal.</p>
-				</div>
-			</div>
-			<div class="item">
-				<div class="name">
-					<h3>Scalable Distributed Data Anonymization for Large Datasets</h3>
-				</div>
-				<div class="publisher">
-					<p class="lead">Transactions on Big Data (Early Access)</p>
-				</div>
-				<div class="date">
-					2022-09-19
-				</div>
-				<div class="website">
-					<a href="https://cs.unibg.it/seclab-papers/2022/TBD/mondrian-ext.pdf">https://cs.unibg.it/seclab-papers/2022/TBD/mondrian-ext.pdf</icon></a>
-				</div>
-				<div class="summary">
-					<p>k-Anonymity and ℓ-diversity are two well-known privacy metrics that guarantee protection of the respondents of a dataset by obfuscating information that can disclose their identities and sensitive information. Existing solutions assume to operate in a centralized scenario, and therefore cannot scale. In this paper, we propose a solution enforcing both k-anonymity and ℓ-diversity in a distributed manner with the use of Apache Spark. The experimental evaluation shows that our solution provides scalability without affecting the quality of the resulting anonymization.</p>
-				</div>
-			</div>
-			<div class="item">
-				<div class="name">
-					<h3>Multi-dimensional indexes for point and range queries on outsourced encrypted data</h3>
-				</div>
-				<div class="publisher">
-					<p class="lead">IEEE Global Communications Conference (GLOBECOM)</p>
-				</div>
-				<div class="date">
-					2021-12-07
-				</div>
-				<div class="website">
-					<a href="https://cs.unibg.it/seclab-papers/2021/GLOBECOM/multi-dimensional-indexes.pdf">https://cs.unibg.it/seclab-papers/2021/GLOBECOM/multi-dimensional-indexes.pdf</icon></a>
-				</div>
-				<div class="summary">
-					<p>An approach for indexing encrypted data stored at external providers to enable provider-side evaluation of queries. The approach supports the evaluation of point and range conditions on multiple attributes, and protects data against static frequency-based inferences by clustering tuples in fixed-size groups that are mapped to the same index values. The experiments evaluate query performance and client-storage requirements, and confirm the efficiency of our solution.</p>
-				</div>
-			</div>
-			<div class="item">
-				<div class="name">
-					<h3>I Told You Tomorrow: Practical Time-Locked Secrets using Smart Contracts</h3>
-				</div>
-				<div class="publisher">
-					<p class="lead">International Conference on Availability, Reliability and Security (ARES)</p>
-				</div>
-				<div class="date">
-					2021-08-17
-				</div>
-				<div class="website">
-					<a href="https://cs.unibg.it/seclab-papers/2021/ARES/ityt.pdf">https://cs.unibg.it/seclab-papers/2021/ARES/ityt.pdf</icon></a>
-				</div>
-				<div class="summary">
-					<p>Time-Locks enable the release of a secret at a future point in time. Many approaches implement Time-Locks as cryptographic puzzles, binding the time span for the recovery of the secret to the time to solve the puzzle. To overcome this limitation, we propose I Told You Tomorrow (ITYT), a novel way of implementing time-locked secrets based on smart contracts. ITYT relies on the blockchain to measure the elapse of time, and it combines threshold cryptography with economic incentives and penalties to replace cryptographic puzzles. We analyze its resiliency to attacks with the help of economic game theory and demonstrate the low cost and limited resource consumption of the approach with our experiments.</p>
-				</div>
-			</div>
-			<div class="item">
-				<div class="name">
-					<h3>SEApp: Bringing Mandatory Access Control to Android Apps</h3>
-				</div>
-				<div class="publisher">
-					<p class="lead">USENIX Security Symposium (USENIX Security)</p>
-				</div>
-				<div class="date">
-					2021-08-11
-				</div>
-				<div class="website">
-					<a href="https://cs.unibg.it/seclab-papers/2021/USENIX/seapp.pdf">https://cs.unibg.it/seclab-papers/2021/USENIX/seapp.pdf</icon></a>
-				</div>
-				<div class="summary">
-					<p>The Android security model focuses on to the protection of system components and secure the interactions between apps. However, app developers have no way to isolate internal components of their applications. Our solution overcomes this limitation, giving developers the power to define ad-hoc Mandatory Access Control (MAC) policies for their apps. This is a natural evolution of the security mechanisms already available in Android, and can help guarantee user privacy even in the presence of third-party components.</p>
-				</div>
-			</div>
-			<div class="item">
-				<div class="name">
-					<h3>Scalable Distributed Data Anonymization</h3>
-				</div>
-				<div class="publisher">
-					<p class="lead">IEEE International Conference on Pervasive Computing and Communications (PerCom)</p>
-				</div>
-				<div class="date">
-					2021-03-22
-				</div>
-				<div class="website">
-					<a href="https://cs.unibg.it/seclab-papers/2021/PerCom/mondrian.pdf">https://cs.unibg.it/seclab-papers/2021/PerCom/mondrian.pdf</icon></a>
-				</div>
-				<div class="summary">
-					<p>An approach for enabling distributed anonymization of sensor data using an arbitrary number of workers with Apache Spark. The experimental evaluation shows that the proposed approach is scalable and does not affect the quality of the anonymized dataset.</p>
-				</div>
-			</div>
-			<div class="item">
-				<div class="name">
-					<h3>Artifact: Scalable Distributed Data Anonymization</h3>
-				</div>
-				<div class="publisher">
-					<p class="lead">IEEE International Conference on Pervasive Computing and Communications (PerCom)</p>
-				</div>
-				<div class="date">
-					2021-03-22
-				</div>
-				<div class="website">
-					<a href="https://cs.unibg.it/seclab-papers/2021/PerCom/mondrian-artifact.pdf">https://cs.unibg.it/seclab-papers/2021/PerCom/mondrian-artifact.pdf</icon></a>
-				</div>
-				<div class="summary">
-					<p>The paper describes the prototype of Scalable Distributed Data Anonymization, and how to reproduce its experiments.</p>
-				</div>
-			</div>
+			<button onclick="toggle('publications')"> Show all publications</button>
 		</div>
 	</section>
 
