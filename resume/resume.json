@@ -60,8 +60,9 @@
       "area": "Software Engineering",
       "studyType": "Ph.D. program in Engineering and Applied Sciences",
       "startDate": "2020",
-      "subject": "Mobile & cloud security, Access control, Privacy",
-      "supervisor": "Prof. Stefano Paraboschi"
+      "endDate": "2023",
+      "thesis": "Fine-grained access control technologies to protect resources in mobile and cloud applications",
+      "gpa": "Excellent"
     },
     {
       "institution": "Politecnico di Milano",
@@ -69,7 +70,7 @@
       "studyType": "Master of Science (MSc)",
       "startDate": "2015",
       "endDate": "2018",
-      "thesis": "Mandatory Access Control for Third-Party Apps",
+      "thesis": "SELinux policies for fine-grained protection of Android apps",
       "gpa": "3.85/4.0"
     },
     {
