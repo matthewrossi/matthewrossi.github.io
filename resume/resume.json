@@ -28,16 +28,14 @@
       "position": "Researcher",
       "website": "https://seclab.unibg.it/",
       "startDate": "2019",
-      "summary": "UniBG Security Lab is the Computer Security group at Università degli Studi di Bergamo. Research interests include cloud and mobile security, with particular focus on policies and access control.",
+      "summary": "As a member of the computer security group at Università degli Studi di Bergamo I research computer systems security across heterogeneous technological environments. From cloud systems (e.g., Kubernetes), to web technologies (e.g., JavaScript runtimes, WebAssembly), and even mobile systems (e.g., Android).",
       "highlights": [
-        "Extended the use of SELinux in Android to support 3rd party app's specific policies",
-        "Extended the secure by default approach of the Deno runtime to native code execution",
-        "Developed a sanitization algorithm to achieve k-anonymity on large datasets with Apache Spark",
-        "Developed a secure indexing tool enabling query execution over encrypted datasets",
-        "Developed a protocol to deploy Time-Locks using Multi-Party Computation, threshold cryptography and smart contracts",
-        "Developed an encrypted virtual filesystem using Filesystem in Userspace (FUSE)",
-        "Developed a policy engine evaluating access requests based on an ODRL-like policy language",
-        "Supervised 20+ thesis students"
+        "Drive architectural decisions in Horizon Europe projects",
+        "Collaborate with project partners to design and develop the software platform",
+        "Identify security gaps in widely adopted systems and develop practical solutions",
+        "Assess security and evaluate performance of systems",
+        "Write publications and technical reports",
+        "Supervised 25+ thesis students"
       ]
     },
     {
@@ -45,12 +43,13 @@
       "position": "Teaching Assistant",
       "website": "https://www.unibg.it/",
       "startDate": "2019",
-      "summary": "Teaching assistant for the bachelor's courses: \"Informatica (modulo di programmazione)\" and \"Basi di dati e Web\", and the master's courses: \"Advanced Data Management\" and \"Sicurezza dei sistemi informatici\". Lectures of these courses are about:",
+      "summary": "Teaching assistant for the bachelor's courses: \"Informatica (modulo di programmazione)\" and \"Basi di dati\" (formerly \"Basi di dati e Web\"), and the master's courses: \"Advanced Data Management\" and \"Sicurezza dei sistemi informatici\". Lectures of these courses are about:",
       "highlights": [
-        "Programming in Python",
-        "Database technologies & Web development",
-        "Access control & Sanboxing",
-        "Distributed data processing with Apache Spark"
+        "Foundations of computer programming in Python",
+        "Relational databases (foundations, data models, schema design, and queries)",
+        "Web development (front-end, back-end, and object-relational-mapping)",
+        "Linux access control mechanisms and their use in Android",
+        "Frameworks for scalable distributed data processing (e.g., Apache Hadoop, Apache Spark)"
       ]
     }
   ],
