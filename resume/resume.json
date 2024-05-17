@@ -192,27 +192,27 @@
     {
       "name": "SEApp: Bringing Mandatory Access Control to Android Apps",
       "website": "https://github.com/matthewrossi/seapp",
-      "summary": "Design and implemention of a SELinux solution to extend the Android's SELinux implementation to support 3rd party app's defined policy. The repository provides a set of changes to the Android Open Source Project."
+      "summary": "Patch to the Android Open Source Project (AOSP) to improve the security of Android applications by allowing developers to define ad hoc policies for their app components. This is a natural evolution of the Android security model, and can help guarantee user privacy even in the presence of third-party components (e.g., advertisement libraries). It supports multiple Android versions and has been tested on virtual and physical devices."
     },
     {
       "name": "Anonymization in Apache Spark",
       "website": "https://github.com/mosaicrown/mondrian",
-      "summary": "A Dockerized Apache Spark-based version of Mondrian, a sanitization algorithm to achieve k-anonimity. This version of Mondrian is meant to perform sanitization over large datasets, and it is executed on an Apache Spark cluster with a varying number of executors."
+      "summary": "Apache Spark application implementing an efficient and effective approach to protect user privacy by obfuscating their identities or sensitive information. Three kind of transformations are supported: k-anonymity, l-diversity, and the use of both of them. Sanitization jobs are configured by the requesting application with numerous parameters with the goal of tailoring the sanitization process according to the specific requirements of the user. The application can run in Kubernetes clusters."
     },
     {
       "name": "Multi-Dimensional Flat Indexing for Encrypted Databases",
       "website": "https://github.com/unibg-seclab/flat-index",
-      "summary": "A secure indexing tool enabling query execution over encrypted datasets. It preprocesses the dataset to construct client-side mappings and uses them to wrap the dataset accordingly. It shows their runtime use, by automating the upload of the encrypted dataset to PostgresSQL and Redis, and querying them."
+      "summary": "Index enabling query execution over encrypted datasets without leaking frequency information. The tool preprocesses the dataset to construct client-side mappings and encrypt the dataset. Then, it shows their runtime use, by automating the upload of the encrypted dataset to PostgresSQL and Redis, and querying them."
     },
     {
-      "name": "FreyaFS - a Mix&Slice virtual filesystem",
+      "name": "A Mix&Slice virtual filesystem",
       "website": "https://github.com/mosaicrown/freya-fs",
-      "summary": "An encrypted virtual filesystem implemented on top of Filesystem in Userspace (FUSE) that persists data using the Mix&Slice all-or-nothing transform."
+      "summary": "Encrypted virtual filesystem implemented on top of Filesystem in Userspace (FUSE) that persists data using the Mix&Slice all-or-nothing transform."
     },
     {
-      "name": "ODRL-like Policy Engine",
+      "name": "RDF-based Policy Engine with SQL integrations",
       "website": "https://github.com/mosaicrown/policy-engine",
-      "summary": "A policy engine evaluating access requests based on an ODRL-like policy language. It includes a SQL front end to extract the targets needed to perform a given query and therefore automate the target identification on relational databases access requests."
+      "summary": "RDF-based policy engine to evaluate access requests according to the MOSAICrOWN policy language. It includes SQL integrations to identify the set of resources target of a query, make a policy decision, and, when possible, rewrite the query to guarantee the enforcement of the policy."
     },
     {
       "name": "Music Recommender",
@@ -222,7 +222,7 @@
     {
       "name": "Il Dottore Artificiale",
       "website": "https://github.com/matthewrossi/dottore-artificiale",
-      "summary": "A simplified implementation of a rule-based expert system in the medical field, with the goal to filter diseases a patient may be suffering based on the symptoms she presents. A chatbot interacts with the patient by generating questions and parsing their answers with regular expressions."
+      "summary": "A simplified implementation of a rule-based expert system in the medical field, with the goal to filter diseases a patient may be suffering based on the symptoms they presents. A chatbot interacts with the patient by generating questions and parsing their answers with regular expressions."
     },
     {
       "name": "Command Prompt Snake",
