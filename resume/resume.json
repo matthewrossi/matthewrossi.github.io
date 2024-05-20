@@ -94,7 +94,7 @@
       "title": "CSAW 2023 Applied Research Competition Finalist",
       "date": "2023-09-15",
       "awarder": "Grenoble INP - Esisar | Engineering school in cybersecure intelligent systems",
-      "summary": "This competition assesses the top scholarly security research of the year by focusing on research that has a practical impact. The paper NatiSand: Native Code Sandboxing for JavaScript Runtimes, of which I am one of the authors, was selected as one of the top 10 finalists. In short, it presents a mechanism to isolate binary programs and shared libraries in Javascript runtimes (e.g., Node.js, Deno, and Bun)."
+      "summary": "This competition assesses the top scholarly security research of the year by focusing on research that has a practical impact. The paper NatiSand: Native Code Sandboxing for JavaScript Runtimes, of which I am one of the authors, was selected as one of the top 10 finalists. In short, it presents a mechanism to isolate binary programs and shared libraries in JavaScript runtimes (e.g., Node.js, Deno, and Bun)."
     },
     {
       "title": "CSAW 2021 Applied Research Competition Finalist",
@@ -190,12 +190,12 @@
   ],
   "projects": [
     {
-      "name": "Deployment of the Kubernetes platform for green and privacy preserving data operations",
+      "name": "Deployment of the Kubernetes Platform for Green and Privacy Preserving Data Operations",
       "website": "https://github.com/glaciation-heu/gitops-deployments",
       "summary": "GitOps repository for the automated deployment of the Kubernetes platform for green and privacy preserving data operations with the use of ArgoCD. The project is part of the results produced by the consortium of the GLACIATION project. I have been in charge of the deployment of OPA Gatekeeper (with the Gatekeeper Policy Manager), MinIO server-side encryption with HashiCorp Vault, and the Apache Spark operator with our ad hoc data sanitization application."
     },
     {
-      "name": "Kubernetes platform for green and privacy preserving data operations",
+      "name": "Kubernetes Platform for Green and Privacy Preserving Data Operations",
       "website": "https://github.com/glaciation-heu/IceStream",
       "summary": "Documentation, design and implementation of the Kubernetes platform for green and privacy preserving data operations. The project is part of the results produced by the consortium of the GLACIATION project. I have been in charge of the design and implementation of the admission control, data wrapping, and data sanitization services."
     },
@@ -215,22 +215,27 @@
       "summary": "Index enabling query execution over encrypted datasets without leaking frequency information. The tool preprocesses the dataset to construct client-side mappings and encrypt the dataset. Then, it shows their runtime use, by automating the upload of the encrypted dataset to PostgresSQL and Redis, and querying them."
     },
     {
-      "name": "NatiSand: Native code sandboxing for JavaScript runtimes",
+      "name": "Native Code Sandboxing for the Deno Runtime",
       "website": "https://github.com/unibg-seclab/natisand",
-      "summary": "Patch to the Deno Javascript runtime to provide strong isolation guarantees against the execution of native code. It allows developers to control access to filesystem, Inter-Process Communication, and network, effectively reducing the risks coming from the execution of binary programs and shared libraries. Despite the use of advanced security mechanisms, the solution features a simple interface that requires no application changes nor security expertise from developers."
+      "summary": "Patch to the Deno JavaScript runtime to provide strong isolation guarantees against the execution of native code. It allows developers to control access to filesystem, Inter-Process Communication, and network, effectively reducing the risks coming from the execution of binary programs and shared libraries. Despite the use of advanced security mechanisms, the solution features a simple interface that requires no application changes nor security expertise from developers."
     },
     {
-      "name": "Cage4Deno: A Fine-Grained Sandbox for Deno Subprocesses",
+      "name": "Fine-Grained Sandbox for Deno Subprocesses",
       "website": "https://github.com/unibg-seclab/Cage4Deno",
-      "summary": "Patch to the Deno Javascript runtime to enable the creation of fine-grained sandboxes for the execution of subprocesses. The sandbox is mainly built using Landlock, with policy exceptions being supported thanks to eBPF. The primary goal of the proposed protection mechanism is to preserve the integrity of the filesystem, and prevent access to confidential resources."
+      "summary": "Patch to the Deno JavaScript runtime to enable the creation of fine-grained sandboxes for the execution of subprocesses. The sandbox is mainly built using Landlock, with policy exceptions being supported thanks to eBPF. The primary goal of the proposed protection mechanism is to preserve the integrity of the filesystem, and prevent access to confidential resources."
     },
     {
-      "name": "SEApp: Bringing Mandatory Access Control to Android Apps",
+      "name": "Security-Enhanced Android Applications",
       "website": "https://github.com/matthewrossi/seapp",
       "summary": "Patch to the Android Open Source Project (AOSP) to improve the security of Android applications by allowing developers to define ad hoc policies for their app components. This is a natural evolution of the Android security model, and can help guarantee user privacy even in the presence of third-party components (e.g., advertisement libraries). It supports multiple Android versions and has been tested on virtual and physical devices."
     },
     {
-      "name": "A Mix&Slice virtual filesystem",
+      "name": "Practical Time-Locked Secrets using Smart Contracts",
+      "website": "https://github.com/unibg-seclab/ityt",
+      "summary": "Novel way of implementing time-locked secrets based on smart contracts. It relies on the blockchain to measure the elapse of time, and it combines threshold cryptography with economic incentives and penalties to replace cryptographic puzzles. The prototype is implemented on top of the Ethereum blockchain."
+    },
+    {
+      "name": "Mix&Slice Virtual Filesystem",
       "website": "https://github.com/mosaicrown/freya-fs",
       "summary": "Encrypted virtual filesystem implemented on top of Filesystem in Userspace (FUSE) that persists data using the Mix&Slice all-or-nothing transform."
     },
