@@ -12,8 +12,8 @@
 	<link href="//bootswatch.com/3/lumen/bootstrap.min.css" rel="stylesheet">
 	<link href='//fonts.googleapis.com/css?family=Roboto:500,300' rel='stylesheet' type='text/css'>
 
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/brands.css" integrity="sha384-QT2Z8ljl3UupqMtQNmPyhSPO/d5qbrzWmFxJqmY7tqoTuT2YrQLEqzvVOP2cT5XW" crossorigin="anonymous">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/fontawesome.css" integrity="sha384-u5J7JghGz0qUrmEsWzBQkfvc8nK3fUT7DCaQzNQ+q4oEXhGSx+P2OqjWsfIRB8QT" crossorigin="anonymous">
+	<link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/brands.min.css" integrity="sha512-58P9Hy7II0YeXLv+iFiLCv1rtLW47xmiRpC1oFafeKNShp8V5bKV/ciVtYqbk2YfxXQMt58DjNfkXFOn62xE+g==" referrerpolicy="no-referrer" rel="stylesheet">
+	<link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/fontawesome.min.css" integrity="sha512-v8QQ0YQ3H4K6Ic3PJkym91KoeNT5S3PnDKvqnwqFD1oiqIl653crGZplPdU5KKtHjO0QKcQ2aUlQZYjHczkmGw==" referrerpolicy="no-referrer" rel="stylesheet">
 
 	<style>
 	body {
@@ -215,6 +215,10 @@ button:hover {
 
 #profiles .fa-stack-overflow:hover {
 	color: #ff9900;
+}
+
+#profiles .fa-google-scholar:hover {
+	color: #4185f4;
 }
 
 #profiles {
@@ -467,7 +471,7 @@ function toggle(section) {
 				</div>
 				<div class="col-xs-9 col-sm-8">
 					<h1>Matthew Rossi</h1>
-					<h2>Researcher @ Università degli Studi di Bergamo</h2>
+					<h2>Computer Security Researcher @ Università degli Studi di Bergamo</h2>
 					<section id="basics">
 						<div class="contact">
 							<div class="website">
@@ -483,13 +487,18 @@ function toggle(section) {
 						</section>
 						<section id="profiles">
 							<div class="item">
-								<a href="https://github.com/matthewrossi">
-								<i class="fab fa-github"></i>
+								<a href="https://scholar.google.com/citations?user&#x3D;2xFiaFwAAAAJ">
+								<i class="fab fa-google-scholar"></i>
 								</a>
 							</div>
 							<div class="item">
 								<a href="https://linkedin.com/in/mattlectic">
 								<i class="fab fa-linkedin"></i>
+								</a>
+							</div>
+							<div class="item">
+								<a href="https://github.com/matthewrossi">
+								<i class="fab fa-github"></i>
 								</a>
 							</div>
 						</section>
@@ -499,7 +508,7 @@ function toggle(section) {
 			<div id="summary" class="row">
 				<div class="col-sm-8 col-sm-offset-4 col-xs-12">
 					<div class="summary">
-						<p class="lead">I am a highly motivated developer passionate about tackling impactful projects. Currently a researcher at Università degli Studi di Bergamo, I investigate integrating security features across mobile, web, and cloud systems. As a lifelong learner who thrives in collaborative environments, I enjoy exchanging ideas with inspiring colleagues.</p>
+						<p class="lead">I am a highly motivated developer passionate about tackling impactful projects. Currently an assistant professor at Università degli Studi di Bergamo, I investigate integrating security features across mobile, web, and cloud systems. As a lifelong learner who thrives in collaborative environments, I enjoy exchanging ideas with inspiring colleagues.</p>
 					</div>
 				</div>
 			</div>
@@ -520,11 +529,11 @@ function toggle(section) {
 					Università degli Studi di Bergamo
 				</h3>
 				<div class="position">
-					<p class="lead">Researcher</p>
+					<p class="lead">Assistant Professor</p>
 				</div>
 				<div class="date">
 					<span class="startDate">
-						2019
+						2024
 					</span>
 					<span class="endDate">
 						- Present
@@ -534,15 +543,34 @@ function toggle(section) {
 					<a href="https://seclab.unibg.it/">https://seclab.unibg.it/</a>
 				</div>
 				<div class="summary">
-					<p>As a member of the computer security group at Università degli Studi di Bergamo I research computer systems security across heterogeneous technological environments. From cloud systems (e.g., Kubernetes), to web technologies (e.g., JavaScript runtimes, WebAssembly), and even mobile systems (e.g., Android).</p>
+					<p>Bringing eBPF security to new hights!</p>
+				</div>
+			</div>
+			<div class="item">
+				<h3 class="name">
+					Università degli Studi di Bergamo
+				</h3>
+				<div class="position">
+					<p class="lead">Postdoctoral Fellow</p>
+				</div>
+				<div class="date">
+					<span class="startDate">
+						2023
+					</span>
+					<span class="endDate">
+						- 2024
+					</span>
+				</div>
+				<div class="website">
+					<a href="https://seclab.unibg.it/">https://seclab.unibg.it/</a>
+				</div>
+				<div class="summary">
+					<p>Protect resources in cloud-native deployments (e.g., Kubernetes)</p>
 				</div>
 				<ul class="highlights">
 					<li>Drive architectural decisions in Horizon Europe projects</li>
 					<li>Collaborate with project partners to design and develop the software platform</li>
-					<li>Identify security gaps in widely adopted systems and develop practical solutions</li>
-					<li>Assess security and evaluate performance of systems</li>
-					<li>Write publications and technical reports</li>
-					<li>Supervised 25+ thesis students</li>
+					<li>Supervised 15 thesis students</li>
 				</ul>
 			</div>
 			<div class="item">
@@ -550,29 +578,72 @@ function toggle(section) {
 					Università degli Studi di Bergamo
 				</h3>
 				<div class="position">
-					<p class="lead">Teaching Assistant</p>
+					<p class="lead">Teaching Fellow</p>
 				</div>
 				<div class="date">
 					<span class="startDate">
 						2019
 					</span>
 					<span class="endDate">
-						- Present
+						- 2024
 					</span>
 				</div>
 				<div class="website">
 					<a href="https://www.unibg.it/">https://www.unibg.it/</a>
 				</div>
 				<div class="summary">
-					<p>Teaching assistant for the bachelor&#x27;s courses: &quot;Informatica (modulo di programmazione)&quot; and &quot;Basi di dati&quot; (formerly &quot;Basi di dati e Web&quot;), and the master&#x27;s courses: &quot;Advanced Data Management&quot; and &quot;Sicurezza dei sistemi informatici&quot;. Lectures of these courses are about:</p>
+					<p>Teaching fellow of bachelor&#x27;s and master&#x27;s courses about: computer programming, web development, frameworks for scalable distributed data processing, databases, and system security</p>
+				</div>
+			</div>
+			<div class="item">
+				<h3 class="name">
+					Università degli Studi di Bergamo
+				</h3>
+				<div class="position">
+					<p class="lead">Ph.D. Student</p>
+				</div>
+				<div class="date">
+					<span class="startDate">
+						2020
+					</span>
+					<span class="endDate">
+						- 2023
+					</span>
+				</div>
+				<div class="website">
+					<a href="https://seclab.unibg.it/">https://seclab.unibg.it/</a>
+				</div>
+				<div class="summary">
+					<p>Protect resources in mobile and web applications</p>
 				</div>
 				<ul class="highlights">
-					<li>Fundamentals of computer programming in Python</li>
-					<li>Relational databases (fundamentals, data models, schema design, and queries)</li>
-					<li>Web development (front-end, back-end, and object-relational-mapping)</li>
-					<li>Linux access control mechanisms and their use in Android</li>
-					<li>Frameworks for scalable distributed data processing (e.g., Apache Hadoop, Apache Spark)</li>
+					<li>Publications at USENIX, RAID, ASIACCS (among others)</li>
+					<li>CSAW 2021 &amp; 2023 Applied Research Competition Finalist</li>
+					<li>IEEE PerCom 2021 Best Artifact Award winner</li>
+					<li>Supervised 32 thesis students</li>
 				</ul>
+			</div>
+			<div class="item">
+				<h3 class="name">
+					Università degli Studi di Bergamo
+				</h3>
+				<div class="position">
+					<p class="lead">Research Assistant</p>
+				</div>
+				<div class="date">
+					<span class="startDate">
+						2019
+					</span>
+					<span class="endDate">
+						- 2020
+					</span>
+				</div>
+				<div class="website">
+					<a href="https://seclab.unibg.it/">https://seclab.unibg.it/</a>
+				</div>
+				<div class="summary">
+					<p>Improve the Android security model to guarantee user privacy even in the presence of third-party components</p>
+				</div>
 			</div>
 		</div>
 	</section>
@@ -1018,7 +1089,7 @@ function toggle(section) {
 						<h3>Scalable Distributed Data Anonymization for Large Datasets</h3>
 					</div>
 					<div class="publisher">
-						<p class="lead">Transactions on Big Data (Early Access)</p>
+						<p class="lead">IEEE Transactions on Big Data (TBD)</p>
 					</div>
 					<div class="date">
 						2022-09-19

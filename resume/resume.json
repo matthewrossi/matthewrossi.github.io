@@ -2,55 +2,81 @@
   "basics": {
     "icon": "resources/favicon.ico",
     "name": "Matthew Rossi",
-    "label": "Researcher @ Università degli Studi di Bergamo",
+    "label": "Computer Security Researcher @ Università degli Studi di Bergamo",
     "picture": "resources/me.jpg",
     "email": "7518140101025b071a06061c351218141c195b161a18",
     "phone": "",
     "website": "https://matthewrossi.github.io/",
-    "summary": "I am a highly motivated developer passionate about tackling impactful projects. Currently a researcher at Università degli Studi di Bergamo, I investigate integrating security features across mobile, web, and cloud systems. As a lifelong learner who thrives in collaborative environments, I enjoy exchanging ideas with inspiring colleagues.",
+    "summary": "I am a highly motivated developer passionate about tackling impactful projects. Currently an assistant professor at Università degli Studi di Bergamo, I investigate integrating security features across mobile, web, and cloud systems. As a lifelong learner who thrives in collaborative environments, I enjoy exchanging ideas with inspiring colleagues.",
     "location": {},
     "profiles": [
       {
-        "network": "Github",
-        "username": "matthewrossi",
-        "url": "https://github.com/matthewrossi"
+        "network": "google-scholar",
+        "username": "2xFiaFwAAAAJ",
+        "url": "https://scholar.google.com/citations?user=2xFiaFwAAAAJ"
       },
       {
-        "network": "LinkedIn",
+        "network": "linkedin",
         "username": "mattlectic",
         "url": "https://linkedin.com/in/mattlectic"
+      },
+      {
+        "network": "github",
+        "username": "matthewrossi",
+        "url": "https://github.com/matthewrossi"
       }
     ]
   },
   "work": [
     {
       "company": "Università degli Studi di Bergamo",
-      "position": "Researcher",
+      "position": "Assistant Professor",
       "website": "https://seclab.unibg.it/",
-      "startDate": "2019",
-      "summary": "As a member of the computer security group at Università degli Studi di Bergamo I research computer systems security across heterogeneous technological environments. From cloud systems (e.g., Kubernetes), to web technologies (e.g., JavaScript runtimes, WebAssembly), and even mobile systems (e.g., Android).",
+      "startDate": "2024",
+      "summary": "Bringing eBPF security to new hights!"
+    },
+    {
+      "company": "Università degli Studi di Bergamo",
+      "position": "Postdoctoral Fellow",
+      "website": "https://seclab.unibg.it/",
+      "startDate": "2023",
+      "endDate": "2024",
+      "summary": "Protect resources in cloud-native deployments (e.g., Kubernetes)",
       "highlights": [
         "Drive architectural decisions in Horizon Europe projects",
         "Collaborate with project partners to design and develop the software platform",
-        "Identify security gaps in widely adopted systems and develop practical solutions",
-        "Assess security and evaluate performance of systems",
-        "Write publications and technical reports",
-        "Supervised 25+ thesis students"
+        "Supervised 15 thesis students"
       ]
     },
     {
       "company": "Università degli Studi di Bergamo",
-      "position": "Teaching Assistant",
+      "position": "Teaching Fellow",
       "website": "https://www.unibg.it/",
       "startDate": "2019",
-      "summary": "Teaching assistant for the bachelor's courses: \"Informatica (modulo di programmazione)\" and \"Basi di dati\" (formerly \"Basi di dati e Web\"), and the master's courses: \"Advanced Data Management\" and \"Sicurezza dei sistemi informatici\". Lectures of these courses are about:",
+      "endDate": "2024",
+      "summary": "Teaching fellow of bachelor's and master's courses about: computer programming, web development, frameworks for scalable distributed data processing, databases, and system security"
+    },
+    {
+      "company": "Università degli Studi di Bergamo",
+      "position": "Ph.D. Student",
+      "website": "https://seclab.unibg.it/",
+      "startDate": "2020",
+      "endDate": "2023",
+      "summary": "Protect resources in mobile and web applications",
       "highlights": [
-        "Fundamentals of computer programming in Python",
-        "Relational databases (fundamentals, data models, schema design, and queries)",
-        "Web development (front-end, back-end, and object-relational-mapping)",
-        "Linux access control mechanisms and their use in Android",
-        "Frameworks for scalable distributed data processing (e.g., Apache Hadoop, Apache Spark)"
+        "Publications at USENIX, RAID, ASIACCS (among others)",
+        "CSAW 2021 & 2023 Applied Research Competition Finalist",
+        "IEEE PerCom 2021 Best Artifact Award winner",
+        "Supervised 32 thesis students"
       ]
+    },
+    {
+      "company": "Università degli Studi di Bergamo",
+      "position": "Research Assistant",
+      "website": "https://seclab.unibg.it/",
+      "startDate": "2019",
+      "endDate": "2020",
+      "summary": "Improve the Android security model to guarantee user privacy even in the presence of third-party components"
     }
   ],
   "education": [
@@ -154,7 +180,7 @@
     },
     {
       "name": "Scalable Distributed Data Anonymization for Large Datasets",
-      "publisher": "Transactions on Big Data (Early Access)",
+      "publisher": "IEEE Transactions on Big Data (TBD)",
       "releaseDate": "2022-09-19",
       "website": "https://cs.unibg.it/seclab-papers/2022/TBD/mondrian-ext.pdf",
       "summary": "k-Anonymity and ℓ-diversity are two well-known privacy metrics that guarantee protection of the respondents of a dataset by obfuscating information that can disclose their identities and sensitive information. Existing solutions assume to operate in a centralized scenario, and therefore cannot scale. In this paper, we propose a solution enforcing both k-anonymity and ℓ-diversity in a distributed manner with the use of Apache Spark. The experimental evaluation shows that our solution provides scalability without affecting the quality of the resulting anonymization."

@@ -199,6 +199,10 @@ button:hover {
 	color: #ff9900;
 }
 
+#profiles .fa-google-scholar:hover {
+	color: #4185f4;
+}
+
 #profiles {
 	height: 50px;
 	vertical-align:middle;
