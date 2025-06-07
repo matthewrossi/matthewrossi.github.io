@@ -118,6 +118,13 @@
       "summary": "Decentralized storage architectures are emerging as valid complementary solutions to cloud-based storage services. InterPlanetary File System (IPFS) is one of the most well-known distributed file storage protocols with wide adoption, good performance, and a variety of applications built over it. However, IPFS does not natively support data privacy and its decentralized nature limits the ability of data owners to maintain control over their resources and force their deletion. In this paper, we propose Mix-IPFS, an approach that addresses these shortcomings while exhibiting negligible overhead."
     },
     {
+      "name": "Multi-Dimensional Flat Indexing for Encrypted Data",
+      "publisher": "IEEE Transactions on Cloud Computing (TCC)",
+      "releaseDate": "2024-06-04",
+      "website": "https://cs.unibg.it/seclab-papers/2024/TCC/flat-index.pdf",
+      "summary": "We address the problem of indexing encrypted data outsourced to an external cloud server to support server-side execution of multi-attribute queries. Our approach partitions the dataset in groups with the same number of tuples, and associates all tuples in a group with the same combination of index values, so to guarantee protection against static inferences. Our indexing approach does not require any modifications to the server-side software stack, and requires limited storage at the client for query support. The experimental evaluation considers, for the storage of the encrypted and indexed dataset, both a relational database (PostgreSQL) and a key-value database (Redis). We carried out extensive experiments evaluating client-storage requirements and query performance. The experimental results confirm the efficiency of our solution. The proposal is supported by an open source implementation."
+    },
+    {
       "name": "Lightweight Cloud Application Sandboxing",
       "publisher": "IEEE International Conference on Cloud Computing Technology and Science (CLOUDCOM)",
       "releaseDate": "2023-12-4",
